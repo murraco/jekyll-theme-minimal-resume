@@ -17,6 +17,8 @@ Live demo at https://murraco.github.io
 
 This is a simple and minimalist template for Jekyll designed for developers that want to show off their portfolio.
 
+# Screenshot
+
 <p align="center">
   <img src="https://github.com/murraco/murraco.github.io/blob/master/screenshot.png" width="90%" />
 </p>
