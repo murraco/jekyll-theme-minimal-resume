@@ -17,6 +17,12 @@ Live demo at https://murraco.github.io
 
 This is a simple and minimalist template for Jekyll designed for developers that want to show off their portfolio.
 
+***
+
+<h3 align="center">Help this repo with a :star: if it's useful for you! :blush:</h3>
+
+***
+
 # Screenshot
 
 <p align="center">
