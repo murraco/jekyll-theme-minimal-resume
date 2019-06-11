@@ -15,7 +15,7 @@ Live demo at https://murraco.github.io
 ![](https://img.shields.io/badge/devicon-✓-blue.svg)
 ![](https://img.shields.io/badge/gulp-✓-blue.svg)
 
-This is a simple and minimalist template for Jekyll designed for developers that want to show off their portfolio.
+This is a simple and minimalist template for Jekyll designed for developers that want to share a short bio with some basic contact information.
 
 ***
 
