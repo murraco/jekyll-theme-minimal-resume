@@ -1,13 +1,13 @@
 # Site settings
 title: Mauricio Urraco
-description: Jekyll Theme Minimal Resume
-# baseurl: "" # the subpath of your site, e.g. /blog
+description: Resume Website
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Mauricio Urraco
-user_description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci amet laudantium deleniti eveniet dolor totam illo, ab omnis, magni cumque ut sed. Aliquam, itaque quas repellat maxime eum nihil alias.
-user_title: Software Engineer
+username: Lorem Ipsum
+user_description: Software Engineer at Lorem Ipsum Dolor
+user_title: Mauricio Urraco
 email: mauriurraco@gmail.com
 # twitter_username: lorem_ipsum
 # github_username:  lorem_ipsum
