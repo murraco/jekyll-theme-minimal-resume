@@ -2,7 +2,7 @@
 
 Live demo at https://jekyll-theme-minimal-resume.netlify.com/
 
-![](https://img.shields.io/badge/jekyll--serve-success-brightgreen.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/24d80ae8-c3d9-4645-a6d8-9e97fc8dec3c/deploy-status)](https://app.netlify.com/sites/jekyll-theme-minimal-resume/deploys)
 
 # Stack
 
@@ -14,8 +14,6 @@ Live demo at https://jekyll-theme-minimal-resume.netlify.com/
 ![](https://img.shields.io/badge/font--awesome-✓-blue.svg)
 ![](https://img.shields.io/badge/devicon-✓-blue.svg)
 ![](https://img.shields.io/badge/gulp-✓-blue.svg)
-
-This is a simple and minimalist template for Jekyll designed for developers that want to share a short bio with some basic contact information.
 
 ***
 
