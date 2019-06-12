@@ -19,7 +19,7 @@ This is a simple and minimalist template for Jekyll designed for developers that
 
 ***
 
-<h3 align="center">Help this repo with a :star: if it's useful for you! :blush:</h3>
+<h3 align="center">Please help this repo with a :star: if you find it useful! :blush:</h3>
 
 ***
 
