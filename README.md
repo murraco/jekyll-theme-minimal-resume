@@ -1,6 +1,6 @@
 # Jekyll Resume Theme
 
-Live demo at https://murraco.github.io
+Live demo at https://jekyll-theme-minimal-resume.netlify.com/
 
 ![](https://img.shields.io/badge/jekyll--serve-success-brightgreen.svg)
 
@@ -26,7 +26,7 @@ This is a simple and minimalist template for Jekyll designed for developers that
 # Screenshot
 
 <p align="center">
-  <img src="https://github.com/murraco/murraco.github.io/blob/master/screenshot.png" width="90%" />
+  <img src="https://github.com/murraco/jekyll-theme-minimal-resume/blob/master/screenshot.png" width="90%" />
 </p>
 
 # Quick Setup
@@ -76,11 +76,11 @@ You can (and should) edit the `.html` files for adding your own information, ico
 
 # Running locally
 
-In order to compile the assets and run `Jekyll` on local you need to follow those steps:
+In order to compile the assets and run `Jekyll` locally you need to follow those steps:
 
-1. Install **NodeJS**
-2. Run `npm install`
-3. Run `gulp`
+1. Install Jekyll
+2. Run `jekyll build`
+3. Start and http-server in the folder `_site`
 
 # Contribution
 
