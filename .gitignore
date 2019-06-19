@@ -2,4 +2,4 @@
 .jekyll-metadata
 node_modules
 .vscode
-_site
+_site/
