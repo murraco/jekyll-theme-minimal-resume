@@ -60,6 +60,8 @@
 .header-icons {
   display: flex;
   justify-content: center;
+  align-items: center;
+
   text-align: center;
   a {
     // no borders
@@ -67,6 +69,9 @@
     border: none !important;
     outline-style: none !important;
     -moz-outline-style: none !important;
+
+    padding: none:
+    margin: none;
   }
   .icon {
     text-align: center;
@@ -88,8 +93,8 @@
       background: #FFF;
     }
     @media only screen and (min-width:$cut) {
-      width: 35px;
-      height: 35px;
+      width: 30px;
+      height: 30px;
       font-size: 30px;
     }
   }
