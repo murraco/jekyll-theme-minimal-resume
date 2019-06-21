@@ -1,17 +1,16 @@
 # Site settings
 title: Helena Richie
 description: Jekyll Theme Minimal Resume
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+# baseurl: "/helenarichie" # the subpath of your site
+# url: "https://helenarichie.github.io/helenarichie" # the base hostname & protocol for your site
 
 # User settings
 username: Helena Richie
 user_description: I am a fourth-year undergraduate student in the Physics & Astronomy and Mathematics departments at the University of Pittsburgh. My research is in exoplanet detection as lead undergraduate of the Survey of Tranisitng Extrasolar Planets at the University of Pittsburgh (STEPUP).
 user_title: Exoplanet Researcher
 email: helenarichie@gmail.com
-# twitter_username: astr0helena
+# instagram_username: astrohelena
 # github_username:  helenarichie
-# gplus_username:  lorem_ipsum
 
 # Google-analytics
 google-analytics:
