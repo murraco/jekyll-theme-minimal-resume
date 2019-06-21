@@ -1,16 +1,16 @@
 # Site settings
-title: Mauricio Urraco
+title: Helena Richie
 description: Resume Website
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Lorem Ipsum
-user_description: Software Engineer at Lorem Ipsum Dolor
-user_title: Mauricio Urraco
-email: mauriurraco@gmail.com
-# twitter_username: lorem_ipsum
-# github_username:  lorem_ipsum
+username: Helena Richie
+user_description: Exoplanet Researcher at the University of Pittsburgh
+user_title: Helena Richie
+email: helenarichie@gmail.com
+# twitter_username: astr0helena
+# github_username:  helenarichie
 # gplus_username:  lorem_ipsum
 
 # Google-analytics
