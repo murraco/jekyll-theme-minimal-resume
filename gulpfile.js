@@ -8,14 +8,14 @@ var cp = require('child_process');
 var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync');
 
-var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
+var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'bundle';
 
 /*
  * Build the Jekyll Site
  * runs a child process in node that runs the jekyll commands
  */
 gulp.task('jekyll-build', function (done) {
-	return cp.spawn(jekyllCommand, ['build'], {stdio: 'inherit'}).on('close', done);
+	return cp.spawn(jekyllCommand, ['exec', 'jekyll', 'build'], {stdio: 'inherit'}).on('close', done);
 });
 
 /*
