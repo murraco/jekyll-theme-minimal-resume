@@ -70,7 +70,7 @@
     outline-style: none !important;
     -moz-outline-style: none !important;
 
-    padding: none:
+    padding: none;
     margin: none;
   }
   .icon {
@@ -96,6 +96,7 @@
       width: 30px;
       height: 30px;
       font-size: 30px;
+      line-height: 30px;
     }
   }
 }
@@ -109,6 +110,7 @@
   display: block;
   text-align: center;
   font-size: 30px;
+  line-height: 30px;
   cursor: pointer;
   // no borders
   outline: 0 !important;
