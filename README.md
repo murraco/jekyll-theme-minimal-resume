@@ -30,7 +30,7 @@ Live demo at https://jekyll-theme-minimal-resume.netlify.com/
 # Quick Setup
 
 1. Install Jekyll: `gem install jekyll bundler`
-2. For this repository and clone your fork
+2. Fork this repository and clone your fork
 3. Edit `_config.yml` to personalize your site
 
 # Settings
@@ -61,7 +61,7 @@ email: mauriurraco@gmail.com
 - Particle Customization
   - Edit the json data in particle function in `app.js`
   - Refer to `Particle.js` for help
-  
+
 # Content
 
 You can (and should) edit the `.html` files for adding your own information, icons, working experience, social links or whatever you want to add. I.e.:
