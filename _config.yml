@@ -1,14 +1,14 @@
 # Site settings
-title: Mauricio Urraco
-description: Jekyll Theme Minimal Resume
+title: Youngjoon Jeong
+description: master course student
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Mauricio Urraco
-user_description: I\'m a nomad Software Engineer, always searching for the next challenge; no task is too scary nor too difficult. Lately I have been immersed in the <b>crypto-world</b> working for Radix, a London based startup trying to create the next massive scalable DLT. I'm one of the two guys behind all the JS related stuff. Visit my blog here <a href="https://mauriciourraco.com" target="_blank">https://mauriciourraco.com</a>
-user_title: Software Engineer
-email: mauriurraco@gmail.com
+username: Youngjoon Jeong
+user_description: Master course student in MSSEL, Seoul National University.
+user_title: Researcher
+email: af1014@snu.ac.kr
 # twitter_username: lorem_ipsum
 # github_username:  lorem_ipsum
 # gplus_username:  lorem_ipsum
