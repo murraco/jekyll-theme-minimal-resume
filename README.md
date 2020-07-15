@@ -77,8 +77,9 @@ You can (and should) edit the `.html` files for adding your own information, ico
 In order to compile the assets and run `Jekyll` locally you need to follow those steps:
 
 1. Install Jekyll
-2. Run `jekyll build`
-3. Start and http-server in the folder `_site`
+2. Run `bundle install`
+3. Run `bundle exec jekyll build`
+4. Start and http-server in the folder `_site`
 
 # Contribution
 
