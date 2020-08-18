@@ -7,5 +7,14 @@
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
-  <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" >
+  <link rel="apple-touch-icon" sizes="180x180" href="{{' /assets/apple-touch-icon.png' }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{' /assets/favicon-32x32.png' }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{' /assets/favicon-16x16.png' }}">
+  <link rel="manifest" href="{{' assets/site.webmanifest' }}">
+  <link rel="mask-icon" href="{{ 'assets/safari-pinned-tab.svg' }}" color="#000000">
+  <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.ico' }}" >
+  <link rel="anroid-chrome" sizes="512x512" type="image/png" href="{{ '/assets/android-chrome-512x512.png' }}" >
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
 </head>
