@@ -1,0 +1,40 @@
+// This generates the box shadow classes usage .box-shadow-1:: box-shadow: 1px solid black;
+
+@for $i from 1 through 9 {
+
+    .box-shadow-#{$i} {
+        box-shadow: #{$i}px solid black;
+    }
+
+}
+
+
+// This generates the opcaity classes like opacity-1 which stands for
+
+@for $val from 1 through 9 {
+    .opacity-#{$val} {
+        opacity: ($val/10);
+    }
+}
+
+@for $val from 1 through 300 {
+    .padding-top-#{$val} {
+        padding-top: #{$val}px;
+    }
+
+    .padding-right-#{$val} {
+        padding-right: #{$val}px;
+    }
+
+    .padding-left-#{$val} {
+        padding-left: #{$val}px;
+    }
+
+    .padding-bottom-#{$val} {
+        padding-bottom: #{$val}px;
+    }
+
+    .padding-#{$val}{
+        padding: $val;
+    }
+}

@@ -1,0 +1,25 @@
+#navigation-bar {
+    background-color: $navigation-bar-bg-color;
+    //background: linear-gradient(141deg, #0faa9f 0%, #1eb2c5 51%, #2b99cb 75%);
+    padding: 10px;
+    margin-top: 0px;
+    max-height: 100px;
+
+    a.nav-link {
+
+        color: $navigation-bar-color;
+
+        &:hover {
+            color: $navigation-bar-hover-color;
+        }
+    }
+
+    a.active {
+        color: $navigation-bar-hover-color;
+    }
+
+}
+
+#navigation-bar.fixed-top {
+    background-color: #000;
+}

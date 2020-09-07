@@ -1,15 +1,15 @@
 <div id="particles-js">
   <div class="header">
       <h1>
-        <span class="site-title">{{ site.username }}</span>
-        <span class="site-description">{{ site.user_title }}</span>
+        <span class="site-title">{{ site.data.profile.name }}</span>
+        <span class="site-description">{{ site.data.profile.title }}</span>
       </h1>
       <div class="header-icons">
-        <a aria-label="Send email" href="mailto:mauriurraco@gmail.com"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/mauriciourraco7"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
-        <a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/mauricio.urraco"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
-        <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/murraco"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="_blank" href="https://github.com/murraco"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        <a aria-label="Send email" href="mailto:{{ site.data.profile.email }}"><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="My Instagram" target="_blank" href="{{ site.data.profile.social.instagram }}"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
+        <a aria-label="My Facebook" target="_blank" href="{{ site.data.profile.social.facebook }}"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
+        <a aria-label="My LinkedIn" target="_blank" href="{{ site.data.profile.social.linkedin }}"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a aria-label="My Github" target="_blank" href="{{ site.data.profile.social.github }}"><i class="icon fa fa-github" aria-hidden="true"></i></a>
       </div>
       <div class="header-links">
         <!-- <a class="link" href="#about" data-scroll>About Me</a> -->

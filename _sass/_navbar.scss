@@ -1,0 +1,28 @@
+#navigation-bar {
+    background-color: $navigation-bar-bg-color;
+    //background: linear-gradient(141deg, #0faa9f 0%, #1eb2c5 51%, #2b99cb 75%);
+    padding: 0px;
+    margin-top: 0px;
+   // max-height: 100px;
+    ul.nav{
+        margin: 0;
+    }
+    a.nav-link {
+
+        color: $navigation-bar-color;
+
+        &:hover {
+            color: $navigation-bar-hover-color;
+           // background-color: rgba($color: $navigation-bar-hover-color, $alpha: 0.1 );
+        }
+    }
+
+    a.active {
+        color: $navigation-bar-hover-color;
+    }
+
+}
+
+#navigation-bar.fixed-top {
+    background-color: #000;
+}

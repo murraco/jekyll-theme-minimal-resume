@@ -1,0 +1,7 @@
+- title: kabra.prashant016@gmail.com
+  link: 'mailto: kabra.prashant016@gmail.com'
+  icon-class: "fa fa-envelope"
+
+- title: example.com
+  link: 'https://example.com'
+  icon-class: "fa fa-globe"

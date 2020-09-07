@@ -1,0 +1,50 @@
+- title: Automation Developer
+  period: September 2019 - Present
+  company: Isobar
+  location: Boston, MA, USA
+  description: >
+    Free Lancing on Backend Software Development, Web Development, Performance Engineering and Graphic Designing.
+    Experienced in Continuous Development and responsible for Code Performance and Code Refactoring. Played a Core Elixir Developer
+    role in CoAP Protocol Development - an Elixir open source library for IOT communication among the devices connected in Constrained
+    Networks.
+
+- title: Software Engineer Intern
+  period: September 2018 - December 2018
+  company: Isobar
+  location: Boston, MA, USA
+  description: >
+    Internship Desc
+
+
+- title: Associate Software Engineer
+  period: August 2014 - January 2016
+  company: Accenture Services Pvt. Ltd
+  location: Mumbai, India
+  description: >
+    Accenture Desc
+
+- title: BlackBerry App Developer
+  period: 2014 Jun - 2015
+  company: Ahamtech
+  location: XZY
+  description: >
+    Enterprise Mobile App Development including Hub Integartion. Developed 4 Major Applications - includes Instant Messaging and Project Management
+    Tools
+  apps:
+    - name: TB10
+      link: "https://github.com/Ahamtech/TB10"
+      desc: Telegram Chat Client for Instant Messaging and peer to peer authentication.
+
+    - name: Coterie
+      link: "https://github.com/Ahamtech/Coterie"
+      desc: Slack Client-Project Management Tool and Team communication
+
+    - name: Banana
+      link: "https://github.com/Ahamtech/Banana"
+      desc: Asana Client- Project Management Tool
+
+    - name: Kritus
+      link: "https://github.com/Ahamtech/Kritus"
+      desc: BaseCamp Client - Project Management Tool
+
+

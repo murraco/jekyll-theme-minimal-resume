@@ -4,10 +4,18 @@
   {% include head.html %}
   <body>
       {% include header.html %}
+      
+      {% include nav.html class="justify-content-center" links = site.data.links type="navbar" %}
       <section id="about">
         {% include about.html %}
       </section>
         {{ content }}
       {% include footer.html %}
+      <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
+      <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+      <script src="{{ '/assets/js/jquery-3.2.1.min.js' | prepend: site.baseurl }}"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <script src="{{ '/assets/js/jquery.isotope.js' | prepend: site.baseurl }}"></script>
   </body>
 </html>

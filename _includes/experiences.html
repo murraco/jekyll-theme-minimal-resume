@@ -1,0 +1,49 @@
+<div class="container">
+
+    <h3 class="text-center section-heading"> Work Experiences </h3>
+    {% for experience in include.experiences %}
+        <div class="row">
+            <div class="col-md-4 text-left">
+                <h4 class="experience-title" >{{ experience.title }}</h4>
+                <p class="experience-period" >{{ experience.period }}</p>
+
+            </div>
+            <div class="col-md-8 timeline">
+                <div class="row item">
+                    <div class="experience-company col-md-6 float-left">
+
+                        <h4 class="text-left ">{{ experience.company }}</h4>
+                    </div>
+                    <div class="col-md-6 experience-location float-right">
+                        <span class="float-right text-right">
+                            <i class="fa fa-map-marker experience-icon-map-marker" aria-hidden="true"></i> {{ experience.location }}
+                        </span>
+                    </div>
+                </div>
+
+                <div class="experience-description col-md-12">
+                    <p class="text-justify"> {{ experience.description }}</p>
+
+                    {% if experience.apps %}
+
+                        <ul class="mobile-apps">
+
+                            {% for app in experience.apps %}
+
+                                <li>
+                                    <h4 class="mobile-app-name"><a href="{{ app.link }}"> {{ app.name }} </a></h4>
+                                    <p class="mobile-app-description"> {{ app.desc }}</p>
+                                </li>
+
+                            {% endfor %}
+
+                        </ul>
+
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+
+    {% endfor %}
+</div>
