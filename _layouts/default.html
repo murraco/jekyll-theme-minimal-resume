@@ -6,8 +6,14 @@
       {% include header.html %}
       
       {% include nav.html class="justify-content-center" links = site.data.links type="navbar" %}
-      <section id="about">
+      <section id="about" class="anchor">
         {% include about.html %}
+      </section>
+      <section id="experience" class="anchor">
+        {% include experiences.html experiences = site.data.experiences %}
+      </section>
+      <section id="education" class="anchor">
+        {% include education.html educations = site.data.educations %}
       </section>
         {{ content }}
       {% include footer.html %}

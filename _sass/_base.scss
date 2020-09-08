@@ -19,12 +19,15 @@ body {
 article, aside, figcaption, figure, footer, header, nav, section {
     display: block;
 }
-h1, h2, h3, h4, stong {
-    margin-top: 1em;
-    padding-top: 1em;
-    line-height: 1.25;
-    color: #333;
+.anchor{
+    padding-top: 10px;
 }
+// h1, h2, h3, h4, stong {
+//     margin-top: 1em;
+//     padding-top: 1em;
+//     line-height: 1.25;
+//     color: #333;
+// }
 h1 {
     font-size: 2.5rem;
 }
@@ -49,4 +52,88 @@ a img {
 }
 sup, sub {
     line-height: 0;
+}
+.camelCase{
+    text-transform:capitalize;
+}
+.heading span{
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    border-bottom: 3px solid #11ABB0;
+}
+
+.timeline {
+
+    border-left: 3px solid #11ABB0;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+    padding: 0 30px;
+
+    .item {
+        &:before {
+
+            content: "";
+            position: absolute;
+            left: -12px;
+            top: -2px;
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            background: #fff;
+            border: 3px solid #11ABB0;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: -6px;
+            top: 4px;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            background: #11ABB0;
+            z-index: 10;
+        }
+    }
+}
+
+.container {
+    @extend %box-shadow-container;
+
+    .row {
+        padding-bottom: 2px;
+    }
+}
+%boxshadow {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+%box-shadow-container {
+    @extend %boxshadow;
+    background-color: #fff;
+    padding: 20px
+}
+
+%section-heading {
+    padding-bottom: 50px;
+    font-weight: bold;
+    color: #676869;
 }

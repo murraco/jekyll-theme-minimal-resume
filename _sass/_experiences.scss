@@ -1,0 +1,112 @@
+#experience {
+    i{
+        color: $primary-color   ;
+    }
+
+}
+
+.experience > div{
+    padding: 0 30px;
+}
+
+.experience-title {
+    color: $primary-color;
+    margin: 0 auto;
+}
+
+.experience-period,
+.experience-description  {
+    margin-top: 0;
+}
+
+.experience-description {
+    text-align-last: left;
+    padding: 0;
+}
+.experience-company {
+    text-align-last: left;
+    margin: 0 auto;
+}
+.experience-location{
+    padding-top: 1.5em;
+}
+.experience-icon-map-marker {
+    color: gray;
+    padding-right: 3px;
+}
+
+.mobile-apps {
+
+    padding-left: 100px;
+    padding-top: 10px;
+
+}
+@media (max-width: 768px) {
+    .section {
+
+        margin-top: 2px;
+        text-align: center;
+
+        .container {
+
+            padding: 25px 0px 0px 0px;
+
+            .experience-title {
+
+                text-align: center;
+            }
+
+            .experience-period {
+
+                text-align: center;
+                padding-left: 0px;
+                padding-right: 16px;
+
+            }
+
+            .experience-description {
+
+                .mobile-apps {
+
+                    padding-left: 0px;
+                    list-style: none;
+
+                    .mobile-app-description {
+
+                        text-align: left;
+
+                    }
+                }
+            }
+        }
+
+        .section-heading {
+            padding: 0px;
+        }
+
+        .timeline {
+
+            border-left: 0px;
+            padding-bottom: 5px;
+
+            .item {
+
+                &:before {
+
+                    left: 0px;
+                    top: 2px;
+                }
+
+                &:after {
+                    left: 6px;
+                    top: 8px;
+                }
+
+                .experience-company {
+                    font-size: smaller;
+                }
+            }
+
+        }
+    }
+}

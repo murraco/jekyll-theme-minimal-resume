@@ -1,28 +1,27 @@
 <div class="container">
 
-    <h3 class="text-center section-heading"> Work Experiences </h3>
+    <h1 class="text-center section-heading heading"> <span>Work Experiences </span></h1>
     {% for experience in include.experiences %}
-        <div class="row">
-            <div class="col-md-4 text-left">
-                <h4 class="experience-title" >{{ experience.title }}</h4>
+        <div class="row experience">
+            <div class="col-md-6 text-right">
+                <h3 class="experience-title" >{{ experience.title }}</h3>
                 <p class="experience-period" >{{ experience.period }}</p>
 
             </div>
-            <div class="col-md-8 timeline">
+            <div class="col-md-6 timeline">
                 <div class="row item">
-                    <div class="experience-company col-md-6 float-left">
-
-                        <h4 class="text-left ">{{ experience.company }}</h4>
-                    </div>
-                    <div class="col-md-6 experience-location float-right">
-                        <span class="float-right text-right">
+                   
+                        <h3 class="experience-company col-md-6 float-left text-left ">{{ experience.company }}</h3>
+                   
+                   
+                        <span class="col-md-6 experience-location float-right float-right text-right">
                             <i class="fa fa-map-marker experience-icon-map-marker" aria-hidden="true"></i> {{ experience.location }}
                         </span>
-                    </div>
+                    
                 </div>
 
-                <div class="experience-description col-md-12">
-                    <p class="text-justify"> {{ experience.description }}</p>
+                <div class="experience-description col-md-12 text-justify">
+                    {{ experience.description }}
 
                     {% if experience.apps %}
 
