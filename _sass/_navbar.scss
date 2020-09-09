@@ -4,13 +4,14 @@
     padding: 0px;
     margin-top: 0px;
    // max-height: 100px;
-    ul.nav{
+    ul.navbar-nav{
         margin: 0;
+        text-align: center;
     }
     a.nav-link {
 
         color: $navigation-bar-color;
-
+        font-size: 120%;
         &:hover {
             color: $navigation-bar-hover-color;
            // background-color: rgba($color: $navigation-bar-hover-color, $alpha: 0.1 );

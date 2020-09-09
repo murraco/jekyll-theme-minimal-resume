@@ -6,7 +6,7 @@
       <ul class="navbar-nav mr-auto w-100 {{ include.class }}">
         {% for link in include.links %}
         <li class="nav-item">
-            <a class="nav-link" href=" {{ link.link }} " data-scroll>{{ link.title }}</a>
+            <a class="nav-link" href=" {{ link.link }} " data-toggle="collapse" data-target=".navbar-collapse.show" data-scroll>{{ link.title }}</a>
         </li>
         {% endfor %}
       </ul>

@@ -44,7 +44,7 @@
     padding-top: 10px;
 
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .anchor {
 
         margin-top: 2px;
@@ -101,13 +101,13 @@
             .item {
 
                 &:before {
-                 //   display: none;
+                   // display: none;
                     left: 2px;
                     top: -30px;
                 }
 
                 &:after {
-                 //   display: none;
+                  //  display: none;
                     left: 8px;
                     top: -24px;
                 }
