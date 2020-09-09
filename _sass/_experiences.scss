@@ -10,8 +10,8 @@
 }
 
 .experience-title {
-    color: $primary-color;
-    margin: 0 auto;
+   // margin: 0 auto;
+    font-weight: bold;
 }
 
 .experience-period,
@@ -21,14 +21,17 @@
 
 .experience-description {
     text-align-last: left;
-    padding: 0;
+    padding: 0 0 10px 0;
 }
 .experience-company {
-    text-align-last: left;
+    color: $primary-color;
     margin: 0 auto;
+    font-weight: bold;
 }
 .experience-location{
-    padding-top: 1.5em;
+    padding: 0;
+    margin: auto;
+    display: block;
 }
 .experience-icon-map-marker {
     color: gray;
@@ -42,27 +45,33 @@
 
 }
 @media (max-width: 768px) {
-    .section {
+    .anchor {
 
         margin-top: 2px;
         text-align: center;
 
         .container {
 
-            padding: 25px 0px 0px 0px;
-
-            .experience-title {
-
-                text-align: center;
-            }
-
-            .experience-period {
-
-                text-align: center;
+            //padding: 25px 0px 0px 0px;
+            
+            .experience-title, .experience-location, .experience-company,.experience-period  {
+                font-weight: bold;
+                text-align: center !important;
+                font-size: large;
                 padding-left: 0px;
                 padding-right: 16px;
-
+                margin-bottom: 1px !important;
             }
+            .experience-company {
+                font-size: xx-large;
+             }
+             .experience-period {
+                font-style: italic;
+             }
+
+             .experience-location {
+                font-size: medium !important;
+             }
 
             .experience-description {
 
@@ -87,26 +96,26 @@
         .timeline {
 
             border-left: 0px;
-            padding-bottom: 5px;
+            padding: 0 10px 5px 10px;
 
             .item {
 
                 &:before {
-
-                    left: 0px;
-                    top: 2px;
+                 //   display: none;
+                    left: 2px;
+                    top: -30px;
                 }
 
                 &:after {
-                    left: 6px;
-                    top: 8px;
+                 //   display: none;
+                    left: 8px;
+                    top: -24px;
                 }
 
-                .experience-company {
-                    font-size: smaller;
-                }
+                
             }
 
         }
+        
     }
 }

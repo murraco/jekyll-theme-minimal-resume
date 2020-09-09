@@ -1,11 +1,11 @@
 #about {
   font-size: 120%;
   
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  max-width: 960px;
+  //max-width: 960px;
   @media only screen and (min-width: $cut) {
-    width: 80%;
+    width: 100%;
   }
   svg {
     width: 60px !important;

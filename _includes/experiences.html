@@ -3,24 +3,24 @@
     <h1 class="text-center section-heading heading"> <span>Work Experiences </span></h1>
     {% for experience in include.experiences %}
         <div class="row experience">
-            <div class="col-md-6 text-right">
-                <h3 class="experience-title" >{{ experience.title }}</h3>
+            <div class="col-md-4 text-right">
+                <h3 class="experience-company text-right ">{{ experience.company }}</h3>
+                       
                 <p class="experience-period" >{{ experience.period }}</p>
 
             </div>
-            <div class="col-md-6 timeline">
+            <div class="col-md-8 timeline">
                 <div class="row item">
                    
-                        <h3 class="experience-company col-md-6 float-left text-left ">{{ experience.company }}</h3>
+                       <h3 class="experience-title col-md-8" >{{ experience.title }}</h3>
                    
-                   
-                        <span class="col-md-6 experience-location float-right float-right text-right">
+                        <span class="col-md-4 experience-location float-right float-right text-right">
                             <i class="fa fa-map-marker experience-icon-map-marker" aria-hidden="true"></i> {{ experience.location }}
                         </span>
                     
                 </div>
 
-                <div class="experience-description col-md-12 text-justify">
+                <div class="experience-description text-justify">
                     {{ experience.description }}
 
                     {% if experience.apps %}

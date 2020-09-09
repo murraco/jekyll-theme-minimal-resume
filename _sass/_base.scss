@@ -19,6 +19,7 @@ body {
 article, aside, figcaption, figure, footer, header, nav, section {
     display: block;
 }
+
 .anchor{
     padding-top: 10px;
 }
@@ -116,7 +117,7 @@ sup, sub {
 
 .container {
     @extend %box-shadow-container;
-
+    margin: 10px auto;
     .row {
         padding-bottom: 2px;
     }
@@ -129,7 +130,7 @@ sup, sub {
 %box-shadow-container {
     @extend %boxshadow;
     background-color: #fff;
-    padding: 20px
+    padding: 25px
 }
 
 %section-heading {
