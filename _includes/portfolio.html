@@ -18,9 +18,10 @@
             <div class="card portfolio-item">
                 <a href="{{ item.repo }}" class="card-link btn text-center btn-sm text-center " target="_blank">
 
-                     <img class="card-img-top img-fluid " src="{{ item.img }}" alt="Card image cap"> 
+                    <img class="card-img-top img-fluid " src="{{ item.img }}"  alt="Card image cap"> 
+                    <i class="icon fa fa-github repo-github" aria-hidden="true"></i> 
+                        
                     <div class="card-body repo-title-desc">
-                        <i class="icon fa fa-github repo-github" aria-hidden="true"></i>
                         <h3 class="card-title text-left repo-name">{{ item.name }}</h3>
                         <p class="card-text text-left repo-desc">{{ item.desc }}</p>
 

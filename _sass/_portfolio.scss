@@ -45,17 +45,23 @@
         }
 
         .repo-github{
-            
+            position: absolute;
+            right: .25em;
+            top: .25em;
             font-size: xx-large !important;
+            padding: 5px;
         }
         .portfolio-item {
             padding: 0 .2em 1em .2em;
             height: 100%;
+            box-shadow: 0 10px 30px -15px rgba(0,0,0,.2);
+            border: 1px solid rgba(0,0,0,.07);
             &:hover{
 
                 background:  rgba($primary-color, 0.0);
-                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.31);
-                /*box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);*/
+               // box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.31);box-shadow: 0 20px 30px -10px rgba(0,0,0,.2);
+                box-shadow: 0 20px 30px -10px rgba(0,0,0,.2);
+
                 -webkit-transition: all 0.2s ease-in;
                 -moz-transition: all 0.2s ease-in;
                 -ms-transition: all 0.2s ease-in;
