@@ -1,0 +1,36 @@
+<div class="container">
+    <h1 class="text-center section-heading heading"> <span>Porfolio</span></h1>
+
+    <!-- <div class="portfolioFilter">
+
+        <a href="#" data-filter="*" class="current">All Opensource</a>
+        <a href="#" data-filter=".expack">Elixir Packages</a>
+        <a href="#" data-filter=".cli">Command Line Applications</a>
+        <a href="#" data-filter=".blackberry">BlackBerry</a>
+        <a href="#" data-filter=".elixir">Elixir</a>
+
+    </div> -->
+
+    <div class="portfolioContainer row">
+
+        {% for item in include.items %}
+        <div class="col-lg-4">
+            <div class="card portfolio-item">
+                <a href="{{ item.repo }}" class="card-link btn text-center btn-sm text-center " target="_blank">
+
+                     <img class="card-img-top img-fluid " src="{{ item.img }}" alt="Card image cap"> 
+                    <div class="card-body repo-title-desc">
+                        <i class="icon fa fa-github repo-github" aria-hidden="true"></i>
+                        <h3 class="card-title text-left repo-name">{{ item.name }}</h3>
+                        <p class="card-text text-left repo-desc">{{ item.desc }}</p>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+
+
+    </div>
+
+</div>

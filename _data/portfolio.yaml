@@ -1,0 +1,75 @@
+- name: Kubernetes based hybrid cloud web application using terraform
+  repo: "https://github.com/prashantk016/Kubernetes-based-hybrid-cloud-web-application-using-terraform"
+  img: "/images/portfolio/exlist.png"
+  technologies: Kubernetes, Terraform, AWS Code, Azure Pipeline, ReactJS, Java Spring Boot
+  desc: >
+    Completely automated CI/CD pipeline on Hybrid cloud infrastructure build
+    and deployed using terraform, and served using containers orchestrated by kubernetes
+
+- name: "Insurance Policy Management System"
+  repo: https://github.com/prashantk016/AdvBigdataArch_INFO7255
+  img: "/images/portfolio/gentcp.png"
+  technologies: Java Spring Boot, Redis, ELK Stack
+  desc: >
+    Implemented REST API application in Spring Boot to perform CRUD operations of policies with token based authentication
+    Used Key-Value store, Redis, to store data in decomposed form
+    Implemented Elastic search with logstash to facilitate efficient data searching
+
+
+- name: Devop Strategies & Cloud Integration for Java Backend 
+  repo: https://github.com/prashantk016/csye6225-spring2019
+  img: "/images/portfolio/typex.png"
+  technologies: AWS DynamoDB, RDS, Lambda, ELB, Cloudwatch, SNS, SES, etc.
+  desc: >
+    Automated creation of AWS resources via AWS Cloudformation to host REST APIs written in Spring boot
+    Configures Autoscaling groups and designed Security Groups to control traffic to resources like EC2 and RDS
+    Automated the creation of custom AMI images using Packer and CircleCI
+    Managed hosted zones using Route53 and designed CI/CD pipeline for faster delivery using CircleCI and AWS CodeDeploy
+    Integrated AWS services like DynamoDB, RDS, Lambda, ELB, Cloudwatch, SNS, SES, etc.
+    Designed routing policies to map https request to ELB and IAM Roles to restrict access to resources such as S3 bucket
+
+
+- name: Online coffee ordering Web Application 
+  repo: https://github.com/prashantk016/Coffee-ordering-website
+  img: "/images/portfolio/cli-spinners.png"
+  technologies: Angular 5, NodeJS, Google Map API
+  desc: >
+    Simple Coffee ordering web application. Developed using Angular5 and NodeJS/ExpressJS
+
+- name: To-Do Web App (FrontEnd)
+  repo: https://github.com/prashantk016/Todo-WebApp-Angular5
+  img: "/images/portfolio/cli-spinners.png"
+  technologies: Angular 5, SCSS
+  desc: >
+    A Sticky PostIt style to-do web app. 
+    Initially developed using vallina javascript, later implemented in Angular 5
+
+- name: Spreadsheet Web app
+  repo: https://github.com/prashantk016/Spreadsheet-WebApp
+  img: "/images/portfolio/cli-spinners.png"
+  technologies: Vanilla javascript, ES6
+  desc: >
+    A complete spreadsheet application with ability to add/delete rows and columns,
+    add charts, formulas and option to download file as csv
+    
+
+- name: Global Stock Investment System
+  repo: https://github.com/prashantk016/Global-stock-investment-system
+  img: "/images/portfolio/isx.png"
+  technologies: Java Swing, DB4O Storage
+  desc: >
+    Developed a Java Swing application to help people invest in Global stock markets and get free expert advice
+    Used APIs to get live stock prices as well as to get real time Forex rate
+    Implemented viewing stock history of multiple stocks and trends of stock investment using JFreeCharts Library
+    Used JasperReport Library to generate invoices to keep investment records
+
+
+- name: 01 Knapsack using Genetic Algorithm
+  repo: https://github.com/prashantk016/01-Knapsack-using-Genetic-Algorithm
+  img: "/images/portfolio/coterie.png"
+  techonologies: Java
+  desc: >
+    Developed an algorithm in Java to solve 01 Knapsack Problem using Genetic algorithm
+    Implemented mutation and crossover of genotypes for breeding. Used random class to decide both crossover point as well as mutating gene
+    Added parallel processing where each thread divided independently on sub colonies and returned its best candidate
+
