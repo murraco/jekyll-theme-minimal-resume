@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 <html lang="en">
   {% include head.html %}
-  <body>
+  <body  data-spy="scroll" data-target=".navbar" data-offset="0">
       {% include header.html %}
       
       {% include nav.html class="justify-content-center" links = site.data.links type="navbar" %}
@@ -12,6 +12,10 @@
       <section id="experience" class="anchor">
         {% include experiences.html experiences = site.data.experiences %}
       </section>
+      <section id="portfolio" class="anchor" >
+        {% include portfolio.html items=site.data.portfolio %}
+      </section>
+    
       <section id="education" class="anchor">
         {% include education.html educations = site.data.educations %}
       </section>

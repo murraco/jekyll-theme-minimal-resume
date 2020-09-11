@@ -1,3 +1,6 @@
+- title: About
+  link: '#about'
+  
 - title: Experiences
   link: '#experience'
 
@@ -13,8 +16,7 @@
 - title: Contact
   link: '#contact'
 
-- title: About
-  link: '#about'
+
 
 
 
