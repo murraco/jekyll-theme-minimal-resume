@@ -22,29 +22,3 @@
   description: >
     Accenture Desc
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-- title: BlackBerry App Developer
-  period: 2014 Jun - 2015
-  company: Ahamtech
-  location: XZY
-  description: >
-    Enterprise Mobile App Development including Hub Integartion. Developed 4 Major Applications - includes Instant Messaging and Project Management
-    Tools
-  apps:
-    - name: TB10
-      link: "https://github.com/Ahamtech/TB10"
-      desc: Telegram Chat Client for Instant Messaging and peer to peer authentication.
-
-    - name: Coterie
-      link: "https://github.com/Ahamtech/Coterie"
-      desc: Slack Client-Project Management Tool and Team communication
-
-    - name: Banana
-      link: "https://github.com/Ahamtech/Banana"
-      desc: Asana Client- Project Management Tool
-
-    - name: Kritus
-      link: "https://github.com/Ahamtech/Kritus"
-      desc: BaseCamp Client - Project Management Tool
-
-
