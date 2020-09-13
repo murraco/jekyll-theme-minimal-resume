@@ -50,8 +50,30 @@
             padding: 5px;
             background: white;
         }
+
+        .tech-icons{
+           max-height: 3em;
+           max-width: 3em;
+        //    height: 100%;
+           width: auto;
+           display: inline-flex;
+           img{
+               
+               max-width: 100%;
+               width: 100%;
+            //    height: auto;
+               display: flex;
+               margin: 0 auto;
+
+           }
+        }
+
+        .card-footer{
+            background-color: unset;
+            padding: .75rem .25rem .50em;
+        }
         .portfolio-item {
-            padding: 0 .2em 1em .2em;
+            padding: 0 .2em .3em .2em;
             height: 100%;
             box-shadow: 0 10px 30px -15px rgba(0,0,0,.2);
             border: 1px solid rgba(0,0,0,.07);
@@ -71,4 +93,10 @@
         }
     }
 
+}
+@media (max-width: 767px) {
+
+    .tech-icons{
+        max-width: 2em;
+    }
 }

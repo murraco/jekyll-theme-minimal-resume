@@ -19,12 +19,25 @@
                 <a href="{{ item.repo }}" class="card-link btn text-center btn-sm text-center " target="_blank">
 
                     <img class="card-img-top img-fluid " src="{{ item.img }}"  alt="Card image cap"> 
-                    <i class="icon fa fa-github repo-github" aria-hidden="true"></i> 
-                        
+                    <i class="icon fab fa-github-square repo-github" aria-hidden="true"></i>
+
                     <div class="card-body repo-title-desc">
                         <h3 class="card-title text-left repo-name">{{ item.name }}</h3>
                         <p class="card-text text-left repo-desc">{{ item.desc }}</p>
-
+                    </div>
+                    <div class="card-footer">
+                        {% for tech in item.technologies %}
+                        <!-- {{ tech.name}} -->
+                            {% if tech.icons %}
+                                {% for icon in tech.icons %}
+                                    <span class="tech-icons">
+                                         <img class="{{ icon.icon }}" src="../assets/svg/{{ icon.icon }}.svg" alt="{{ icon.icon }}" title="{{ icon.icon | upcase }}">
+                                    </span>
+                                     <!-- {% include_relative {{ icon.icon | prepend: '/assets/svg/' | append: '.svg' }} %}
+                                    </img> -->
+                                {% endfor %}
+                            {% endif %}
+                        {% endfor %}
                     </div>
                 </a>
             </div>
