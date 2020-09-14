@@ -1,25 +1,17 @@
 <div class="container">
-    <h1 class="text-center section-heading heading"> <span>Porfolio</span></h1>
-
-    <!-- <div class="portfolioFilter">
-
-        <a href="#" data-filter="*" class="current">All Opensource</a>
-        <a href="#" data-filter=".expack">Elixir Packages</a>
-        <a href="#" data-filter=".cli">Command Line Applications</a>
-        <a href="#" data-filter=".blackberry">BlackBerry</a>
-        <a href="#" data-filter=".elixir">Elixir</a>
-
-    </div> -->
-
+    <h1 class="text-center section-heading heading"> 
+        <span>Portfolio</span>
+    </h1>
     <div class="portfolioContainer row">
 
         {% for item in include.items %}
-        <div class="col-lg-4">
-            <div class="card portfolio-item">
-                <a href="{{ item.repo }}" class="card-link btn text-center btn-sm text-center " target="_blank">
-
+        <div class="col-lg-4 {% if forloop.index > 5 %} collapse multi-collapse {% endif %}">
+            <div class="card portfolio-item  text-center">
+                
                     <img class="card-img-top img-fluid " src="{{ item.img }}"  alt="Card image cap"> 
-                    <i class="icon fab fa-github-square repo-github" aria-hidden="true"></i>
+                    <a href="{{ item.repo }}" class="card-link btn btn-sm" target="_blank">
+                        <i class="icon fab fa-github-square repo-github" aria-hidden="true"></i>
+                    </a>
 
                     <div class="card-body repo-title-desc">
                         <h3 class="card-title text-left repo-name">{{ item.name }}</h3>
@@ -35,16 +27,18 @@
                                     </span>
                                      <!-- {% include_relative {{ icon.icon | prepend: '/assets/svg/' | append: '.svg' }} %}
                                     </img> -->
+                               
                                 {% endfor %}
                             {% endif %}
                         {% endfor %}
                     </div>
-                </a>
+               
             </div>
         </div>
         {% endfor %}
 
-
     </div>
-
+    <div class="text-right portfolio-more-btn">
+        <button class="btn text-right" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false">Show More..</button>
+    </div>
 </div>

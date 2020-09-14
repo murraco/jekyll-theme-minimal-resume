@@ -7,9 +7,9 @@
         }
         
         .portfolioContainer {
-            // border: 1px solid #eee;
-            // border-radius: 3px;
+            
             padding-top: 20px;
+            
             > div{
                 padding: 5px;
             }
@@ -26,16 +26,9 @@
 
         }
         .repo-title-desc{
-            //overflow: hidden;
+            
         }
         .repo-desc{
-            // display: inline-block;
-            // text-overflow: ellipsis;
-            // width: 100%;
-            // white-space: nowrap;
-            // overflow: hidden;
-            // box-sizing: border-box;
-            // animation: ellipsis ease 5s infinite;
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 3;
@@ -54,14 +47,12 @@
         .tech-icons{
            max-height: 3em;
            max-width: 3em;
-        //    height: 100%;
            width: auto;
            display: inline-flex;
            img{
                
                max-width: 100%;
                width: 100%;
-            //    height: auto;
                display: flex;
                margin: 0 auto;
 
@@ -77,12 +68,11 @@
             height: 100%;
             box-shadow: 0 10px 30px -15px rgba(0,0,0,.2);
             border: 1px solid rgba(0,0,0,.07);
+            border-radius: 1.25em;
             &:hover{
 
                 background:  rgba($primary-color, 0.0);
-               // box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.31);box-shadow: 0 20px 30px -10px rgba(0,0,0,.2);
                 box-shadow: 0 20px 30px -10px rgba(0,0,0,.8);
-
                 -webkit-transition: all 0.2s ease-in;
                 -moz-transition: all 0.2s ease-in;
                 -ms-transition: all 0.2s ease-in;
@@ -90,6 +80,12 @@
                 transition: all 0.2s ease-in;
                 
             }
+        }
+
+        .portfolio-more-btn button{
+            background-color: $primary-color;
+            border-color: $primary-color;
+            color: white;
         }
     }
 

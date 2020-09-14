@@ -125,3 +125,15 @@ document.addEventListener("DOMContentLoaded", function () {
 $('.navbar-collapse a').click(function(){
     $(".navbar-collapse").collapse('hide');
 });
+
+// Toggle Show More button text on portfolio page
+$(document).ready(function(){
+  $('.portfolio-more-btn button').on('click', function () {
+   var text=$('.portfolio-more-btn button').text();
+   if(text === "Show More.."){
+     $(this).html('..Show Less');
+   } else{
+     $(this).text('Show More..');
+  }
+ });
+ });
