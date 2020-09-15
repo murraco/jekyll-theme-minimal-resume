@@ -22,8 +22,7 @@
         }
 
         .repo-name{
-            text-decoration: underline;
-
+            color: $primary-color;
         }
         .repo-title-desc{
             
@@ -90,9 +89,19 @@
     }
 
 }
-@media (max-width: 767px) {
+@media (max-width: 834px) {
 
     .tech-icons{
         max-width: 2em;
     }
+
+    .portfolioContainer {
+        
+        > div{
+            width: 85%;
+            margin: 0 auto;
+            margin-bottom: 0.5em;
+        }
+    }
+    
 }
