@@ -1,0 +1,42 @@
+#skills{
+    .container{
+
+        .skill-container{
+            padding-top: 1em;
+            > div{
+                padding: 5px;
+            }
+            .skill-item{
+                padding: 0 .2em .3em .2em;
+                height: 100%;
+                border: none;
+                word-wrap: normal;
+                font-size: 110%;
+                .skill{
+                    padding: 0;
+                }
+                .skill-heading{
+                    font-weight: bold;
+                    margin-bottom: .2em;
+                    color: $primary-color;
+                }
+                .skill-list{
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        list-style: none;
+                        list-style-position: inside;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .skill{
+        padding: 1em 0;
+    }
+}

@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 class="text-left section-heading heading">
+        <span>Skills</span>
+    </h1>
+    <div class="row skill-container">
+    {% for skill in include.skills %}
+    <div class="col-sm-3">
+        <div class="card skill-item">
+            <div class="skill card-body">
+                <h3 class="skill-heading card-title">{{ skill.type | upcase}}</h3>
+                <ul class="skill-list">
+                    {% for item in skill.list %}
+                    <li>{{ item.name }}</li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
