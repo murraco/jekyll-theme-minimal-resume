@@ -5,10 +5,12 @@
 
 }
 
-.experience > div{
+.experience {
+    padding: 0 1em 1em 1em;
+    > div{
     padding: 0 30px;
+    }
 }
-
 .experience-title {
    // margin: 0 auto;
     font-weight: bold;
