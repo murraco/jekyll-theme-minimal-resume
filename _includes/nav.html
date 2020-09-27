@@ -1,12 +1,12 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark primary-color {{ include.class }}" id="navigation-bar" >
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto w-100 {{ include.class }}">
         {% for link in include.links %}
         <li class="nav-item">
-            <a class="nav-link" href=" {{ link.link }} " data-toggle="collapse" data-target=".navbar-collapse.show" data-scroll>{{ link.title }}</a>
+            <a class="nav-link" href="{{ link.link }}" data-toggle="collapse" data-target=".navbar-collapse.show" data-scroll>{{ link.title }}</a>
         </li>
         {% endfor %}
       </ul>
