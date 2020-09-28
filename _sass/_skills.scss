@@ -14,24 +14,45 @@
 
             .programming-languages > div {
                 background-color: #b2cefe;
+                &:hover{
+                    border-color: #b2cefe;
+                }
             }
             .cloud > div {
                 background-color: #d3f6f3;
+                &:hover{
+                    border-color: #d3f6f3;
+                }
             }
             .containerization > div {
                 background-color: #f9c0c0;
+                &:hover{
+                    border-color: #f9c0c0;
+                }
             }
             .web-technologies > div {
                 background-color: #fee9b2;
+                &:hover{
+                    border-color: #fee9b2;
+                }
             }
             .testing-frameworks > div {
                 background-color: #fbd1b7;
+                &:hover{
+                    border-color: #fbd1b7;
+                }
             }
             .databases > div {
                 background-color: #ccf6c8;
+                &:hover{
+                    border-color: #ccf6c8;
+                }
             }
             .tools > div {
-                background-color: #f9fce1;
+                background-color: #f7b1e9;
+                &:hover{
+                    border-color: #f7b1e9;
+                }
             }
             .skill-item{
                // padding: 0 .2em .3em .2em;
@@ -40,7 +61,13 @@
                 border: none;
                 word-wrap: normal;
                 font-size: 110%;
-                box-shadow: 0 5px 20px -10px rgba(0, 0, 0, 1);
+                border: 2px solid rgba(20, 20, 20, 0);
+                font-weight: bold;
+                &:hover{
+                    background-color:white;
+                    border: 2px solid;
+                    box-shadow: 0 5px 20px -10px rgba(0, 0, 0, 0.5);
+                }
                 .skill{
                     padding: 0;
                 }
