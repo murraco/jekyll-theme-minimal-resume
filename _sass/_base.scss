@@ -22,6 +22,13 @@ article, aside, figcaption, figure, footer, header, nav, section {
 
 .anchor{
     padding-top: 10px;
+
+    &:nth-child(even){
+        background-color: #d3d3d329;
+        -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+        clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+        padding: 65px 10px;
+    }
 }
 .container{
     max-width: 1340px;
@@ -103,12 +110,20 @@ sup, sub {
 .container {
     // @extend %box-shadow-container;
     margin: 10px auto;
-    border-bottom: 1px solid #E8E8E8;
+   // border-bottom: 1px solid #E8E8E8;
     padding-bottom: 24px;
     .row {
         padding-bottom: 2px;
     }
 }
+
+.clip-arrow-down{
+    clip-path: polygon(0px 0%, 50% 80%, 100% 0, 100% 100%, 0% 100%);
+    width: 100%;
+    height: 120px;
+    background-color: $main;
+}
+
 %boxshadow {
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -125,3 +140,15 @@ sup, sub {
     font-weight: bold;
     color: #676869;
 }
+
+
+@media (max-width: 834px) {
+
+    .clip-arrow-down{
+        clip-path: polygon(0px 0%, 50% 60%, 100% 0, 100% 100%, 0% 100%);
+        height: 60px;
+    }
+    
+  
+  
+  }

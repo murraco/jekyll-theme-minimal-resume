@@ -1,0 +1,64 @@
+#contact{
+    
+    background-color: $main;
+    clip-path: unset;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    .container{
+        padding-bottom: 0px;
+        .contact-me-btn{
+            width: 20%;
+            margin: 1em auto;
+            color: #ffffff;
+            border-color: rgba(255, 255, 255,0.5);
+            font-size: 1em;
+            padding: 1em 0;
+            text-transform: capitalize;
+            border: 2px solid;
+            display: block;
+            text-align: center;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            border-radius: 15px;
+            -webkit-transition: background-color 0.5s ease-in-out, 1s;
+            -moz-transition: background-color 0.5s ease-in-out, 1s;
+            -o-transition: background-color 0.5s ease-in-out, 1s;
+            transition: background-color 0.5s ease-in-out, 1s;
+            text-decoration: none;
+            &:hover{
+                background: #fff;
+                color: $main;
+                border-color: rgba(255, 255, 255,0.5);
+            }
+        }
+    }
+}
+
+@media (max-width: 834px) {
+
+    #contact{
+        margin-top: 0;
+            .container{
+            .contact-me-btn{
+                width: 60%;
+            }
+        }
+    }
+  
+  
+  }
+
+@media (max-width: 768px) {
+
+    #contact{
+        margin-top: 0;
+            .container{
+            .contact-me-btn{
+                width: 80%;
+            }
+        }
+    }
+  }
