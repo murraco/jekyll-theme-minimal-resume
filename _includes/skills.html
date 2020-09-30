@@ -4,20 +4,16 @@
     </h1>
     <div class="row skill-container">
     {% for skill in include.skills %}
-    <div class="col-sm-3">
+    {% for item in skill.list %}
+    <div class="col-sm-3 mx-auto {{ skill.type | downcase}}" title="{{ skill.type}}">
         <div class="card skill-item">
             <div class="skill card-body">
-                <h3 class="skill-heading card-title">{{ skill.type | upcase}}</h3>
-                <ul class="skill-list">
-                    {% for item in skill.list %}
-                    <li>{{ item.name }}</li>
-                    {% endfor %}
-                </ul>
-
+                <span class="skill-list">{{ item.name }}</span>
             </div>
 
         </div>
     </div>
+    {% endfor %} 
     {% endfor %}
 </div>
 </div>
