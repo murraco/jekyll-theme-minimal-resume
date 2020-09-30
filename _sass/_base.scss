@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 100%;
+    font-size: 140%;
     line-height: 1.5;
     color: #555;
 
@@ -23,23 +23,8 @@ article, aside, figcaption, figure, footer, header, nav, section {
 .anchor{
     padding-top: 10px;
 }
-// h1, h2, h3, h4, stong {
-//     margin-top: 1em;
-//     padding-top: 1em;
-//     line-height: 1.25;
-//     color: #333;
-// }
-h1 {
-    font-size: 2.5rem;
-}
-h2 {
-    font-size: 2rem;
-}
-h3 {
-    font-size: 1.5rem;
-}
-h4 {
-    font-size: 1rem;
+.container{
+    max-width: 1340px;
 }
 ul, ol {
     margin: 1em 0;
@@ -116,8 +101,10 @@ sup, sub {
 }
 
 .container {
-    @extend %box-shadow-container;
+    // @extend %box-shadow-container;
     margin: 10px auto;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 24px;
     .row {
         padding-bottom: 2px;
     }

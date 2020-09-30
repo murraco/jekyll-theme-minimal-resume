@@ -1,9 +1,11 @@
+$duration: .2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
 #navigation-bar {
     background-color: $navigation-bar-bg-color;
-    //background: linear-gradient(141deg, #0faa9f 0%, #1eb2c5 51%, #2b99cb 75%);
     padding: 0px;
     margin-top: 0px;
-   // max-height: 100px;
     ul.navbar-nav{
         margin: 0;
         text-align: center;
@@ -11,10 +13,44 @@
     a.nav-link {
 
         color: $navigation-bar-color;
-        font-size: 120%;
+        font-size: 130%;
+        position: relative;
         &:hover {
             color: $navigation-bar-hover-color;
-           // background-color: rgba($color: $navigation-bar-hover-color, $alpha: 0.1 );
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0; right: 0;
+            height: 2px;
+            background-color: $whitey;
+        }
+        &:before {
+            opacity: 0;
+            transform: translateY(- $distance);
+            transition: transform 0s $easeOutBack, opacity 0s;
+        }
+        &:after {
+            opacity: 0;
+            transform: translateY($distance/2);
+            transition: transform $duration $easeOutBack, opacity $duration;
+        }
+        &:hover,
+        &:focus {
+            &:before,
+            &:after {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            &:before {
+                transition: transform $duration $easeOutBack, opacity $duration;
+            }
+            &:after {
+                transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+            }
         }
     }
 

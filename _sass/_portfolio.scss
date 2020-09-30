@@ -33,6 +33,7 @@
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
+            font-size: 90%;
         }
 
         .repo-github{
@@ -45,8 +46,8 @@
         }
 
         .tech-icons{
-           max-height: 3em;
-           max-width: 3em;
+           max-height: 2.5em;
+           max-width: 2.5em;
            width: auto;
            display: inline-flex;
            img{
@@ -69,9 +70,10 @@
             box-shadow: 0 10px 30px -15px rgba(0,0,0,.2);
             border: 1px solid rgba(0,0,0,.07);
             border-radius: 1.25em;
+            background-color:unset;
             &:hover{
 
-                background:  rgba($primary-color, 0.0);
+                
                 box-shadow: 0 20px 30px -10px rgba(0,0,0,.8);
                 -webkit-transition: all 0.2s ease-in;
                 -moz-transition: all 0.2s ease-in;
@@ -92,8 +94,9 @@
 }
 @media (max-width: 834px) {
 
-    .tech-icons{
+    #portfolio .container .tech-icons{
         max-width: 2em;
+        max-height: 2em;
     }
 
     .portfolioContainer {
