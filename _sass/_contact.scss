@@ -34,6 +34,15 @@
                 border-color: rgba(255, 255, 255,0.5);
             }
         }
+        .thanks-txt{
+            text-transform: uppercase;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .chat-txt{
+            font-size: 1em;
+        }
+       
     }
 }
 
@@ -41,10 +50,11 @@
 
     #contact{
         margin-top: 0;
-            .container{
+        .container{
             .contact-me-btn{
                 width: 60%;
             }
+            
         }
     }
   
