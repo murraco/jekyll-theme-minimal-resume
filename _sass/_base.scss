@@ -123,6 +123,42 @@ sup, sub {
     background-color: $main;
 }
 
+.scroll-to-top{
+
+    position: fixed;
+    bottom: 60px; 
+    right: 50px; 
+    z-index: 99; 
+    border: none;
+    outline: none;
+    color: $primary-color; 
+    cursor: pointer;
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 2.5em;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    color: $main;
+   .fa-circle{
+        color:white
+    }
+    &:hover {
+        animation-duration: 1s;
+        text-decoration: none;
+        animation-name: bounce-1;
+        animation-timing-function: linear;
+        color: $main; 
+    }
+    @keyframes bounce-1 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-30px); }
+        100% { transform: translateY(0); }
+    }
+
+    
+}
+
 %boxshadow {
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

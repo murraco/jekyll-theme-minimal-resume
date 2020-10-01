@@ -6,6 +6,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  position: sticky;
+  z-index: 100;
   .particles-js-canvas-el {
     height: 100vh !important;
   }

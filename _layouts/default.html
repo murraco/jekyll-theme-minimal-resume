@@ -28,6 +28,10 @@
       </section>
         {{ content }}
       {% include footer.html %}
+      <a href="#" class="scroll-to-top" title="Scroll to top" data-scroll>
+        <i class="fas fa-circle fa-stack-1x"></i>
+        <i class="fas fa-chevron-circle-up fa-stack-1x"></i>
+      </a>
       <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
       <script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
       <script src="{{ '/assets/js/jquery-3.2.1.min.js' | prepend: site.baseurl }}"></script>
