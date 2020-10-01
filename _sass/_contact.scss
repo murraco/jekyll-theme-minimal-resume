@@ -38,6 +38,23 @@
             text-transform: uppercase;
             font-size: 2em;
             font-weight: bold;
+            position: relative;
+            &::before {
+                left: 0;
+            }
+            &::after {
+                right: 0;
+            }
+            &::after, &::before {
+            
+                position: absolute;
+                top: 50%;
+                display: block;
+                width: 40%;
+                border-bottom: 5px solid rgba(246, 246, 246, 0.911);
+                content: "";
+            
+            }
         }
         .chat-txt{
             font-size: 1em;
@@ -54,6 +71,11 @@
             .contact-me-btn{
                 width: 60%;
             }
+            .thanks-txt{
+                &::after, &::before {
+                    width: 30%;
+                }
+            }
             
         }
     }
@@ -61,13 +83,18 @@
   
   }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     #contact{
         margin-top: 0;
-            .container{
+        .container{
             .contact-me-btn{
                 width: 80%;
+            }
+            .thanks-txt{
+                &::after, &::before {
+                    width: 20%;
+                }
             }
         }
     }
