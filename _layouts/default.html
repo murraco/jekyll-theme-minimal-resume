@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 <html lang="en">
   {% include head.html %}
-  <body>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="150">
+    
       {% include header.html %}
       
       {% include nav.html class="justify-content-center" links = site.data.links type="navbar" %}
@@ -32,11 +33,12 @@
         <i class="fas fa-circle fa-stack-1x"></i>
         <i class="fas fa-chevron-circle-up fa-stack-1x"></i>
       </a>
+
       <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
       <script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
       <script src="{{ '/assets/js/jquery-3.2.1.min.js' | prepend: site.baseurl }}"></script>
-      <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
       <script src="{{ '/assets/js/jquery.isotope.js' | prepend: site.baseurl }}"></script>
-  </body>
+      <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+       </body>
 </html>

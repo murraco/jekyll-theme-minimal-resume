@@ -38,8 +38,8 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
             transform: translateY($distance/2);
             transition: transform $duration $easeOutBack, opacity $duration;
         }
-        &:hover,
-        &:focus {
+        &:hover, &.active
+        {
             &:before,
             &:after {
                 opacity: 1;

@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
 // Mobile view - Collapse navbar after clicking a link
-$('.navbar-collapse a').click(function(){
+$('.navbar-nav a').click(function(){
     $(".navbar-collapse").collapse('hide');
 });
 
