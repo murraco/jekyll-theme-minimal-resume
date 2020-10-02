@@ -9,6 +9,35 @@
     width: 60px !important;
     height: auto;
   }
+
+  .download-resume-btn{
+    width: 20%;
+    margin: 1em auto;
+    color: $main;
+    border-color: $main;
+    background: white;
+    font-size: 120%;
+    padding: 1em 0;
+    text-transform: capitalize;
+    border: 2px solid;
+    display: block;
+    text-align: center;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transition: background-color 0.5s ease-in-out, 0.5s;
+    -moz-transition: background-color 0.5s ease-in-out, 0.5s;
+    -o-transition: background-color 0.5s ease-in-out, 0.5s;
+    transition: background-color 0.5s ease-in-out, 0.5s;
+    text-decoration: none;
+    &:hover{
+        background: $main;
+        color: white;
+        border-color: $main
+    }
+}
 }
 
 .tech {
