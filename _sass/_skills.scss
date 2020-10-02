@@ -10,6 +10,7 @@
                 padding:5px;
                 width: auto;
                 display: inline-table;
+                font-size: .9em;
             }
 
             .programming-languages > div {
@@ -58,9 +59,9 @@
                // padding: 0 .2em .3em .2em;
                padding:.5em;
                 height: 100%;
-                border: none;
                 word-wrap: normal;
                 border: 2px solid rgba(20, 20, 20, 0);
+                border-radius: 5px;
                 &:hover{
                     background-color:white;
                     border: 2px solid;
