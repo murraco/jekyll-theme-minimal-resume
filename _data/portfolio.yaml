@@ -1,6 +1,6 @@
 - name: Kubernetes based hybrid cloud web application using terraform
   repo: "https://github.com/prashantk016/Kubernetes-based-hybrid-cloud-web-application-using-terraform"
-  img: "/images/portfolio/exlist.png"
+  img: "#"
   technologies: 
     - name: Kubernetes, Terraform, AWS Code, Azure Pipeline, ReactJS, Java Spring Boot
       icons:
@@ -17,7 +17,7 @@
 
 - name: "Insurance Policy Management System"
   repo: https://github.com/prashantk016/AdvBigdataArch_INFO7255
-  img: "/images/portfolio/gentcp.png"
+  img: "#"
   technologies: 
     - name: Java Spring Boot, Redis, ELK Stack
       icons:
@@ -30,7 +30,7 @@
 
 - name: Devop Strategies & Cloud Integration for Java Backend 
   repo: https://github.com/prashantk016/csye6225-spring2019
-  img: "/images/portfolio/typex.png"
+  img: "#"
   technologies: 
   - name: AWS DynamoDB, RDS, Lambda, ELB, Cloudwatch, SNS, SES, etc.
     icons:
@@ -47,7 +47,7 @@
 
 - name: Online coffee ordering Web Application 
   repo: https://github.com/prashantk016/Coffee-ordering-website
-  img: "/images/portfolio/cli-spinners.png"
+  img: "#"
   technologies: 
     - name: Angular 5, NodeJS, Google Map API
       icons:
@@ -59,7 +59,7 @@
 
 - name: To-Do Web App (FrontEnd)
   repo: https://github.com/prashantk016/Todo-WebApp-Angular5
-  img: "/images/portfolio/cli-spinners.png"
+  img: "#"
   technologies: 
     - name: Angular 5, SCSS
       icons:
@@ -72,7 +72,7 @@
 
 - name: Spreadsheet Web app
   repo: https://github.com/prashantk016/Spreadsheet-WebApp
-  img: "/images/portfolio/cli-spinners.png"
+  img: "#"
   technologies: 
     - name: Vanilla javascript, ES6
       icons:
@@ -86,7 +86,7 @@
 
 - name: Global Stock Investment System
   repo: https://github.com/prashantk016/Global-stock-investment-system
-  img: "/images/portfolio/isx.png"
+  img: "#"
   technologies: 
     - name: Java Swing, DB4O Storage
       icons:
@@ -100,7 +100,7 @@
 
 - name: 01 Knapsack using Genetic Algorithm
   repo: https://github.com/prashantk016/01-Knapsack-using-Genetic-Algorithm
-  img: "/images/portfolio/coterie.png"
+  img: "#"
   technologies: 
     - name: Java
       icons:

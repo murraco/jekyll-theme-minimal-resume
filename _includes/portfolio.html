@@ -19,15 +19,11 @@
                     </div>
                     <div class="card-footer">
                         {% for tech in item.technologies %}
-                        <!-- {{ tech.name}} -->
                             {% if tech.icons %}
                                 {% for icon in tech.icons %}
                                     <span class="tech-icons">
                                          <img class="{{ icon.icon }}" src="../assets/svg/{{ icon.icon }}.svg" alt="{{ icon.icon }}" title="{{ icon.icon | upcase }}">
                                     </span>
-                                     <!-- {% include_relative {{ icon.icon | prepend: '/assets/svg/' | append: '.svg' }} %}
-                                    </img> -->
-                               
                                 {% endfor %}
                             {% endif %}
                         {% endfor %}
