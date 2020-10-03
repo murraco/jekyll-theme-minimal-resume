@@ -5,11 +5,6 @@
   @media only screen and (min-width: $cut) {
     width: 100%;
   }
-  svg {
-    width: 60px !important;
-    height: auto;
-  }
-
   .download-resume-btn{
     width: 25%;
     margin: 1em auto;
@@ -37,7 +32,25 @@
         color: white;
         border-color: $main
     }
-}
+  }
+  .about-me-text{
+    width: 75%;
+    margin: 0 auto;
+  }
+  .wave{
+    font-size: 1.3em;
+  }
+
+  .tech-icons{
+   
+    img{
+        
+      width: 60px !important;
+      height: auto;
+        
+
+    }
+  }
 }
 
 .tech {
@@ -69,6 +82,49 @@
   margin: 5px auto;
   h1 {
     font-weight: 400;
+  }
+
+  .rubik-img{
+    height: 15px;
+    transition: transform 0.5s;
+    animation-name: rubik-animation;
+    animation-duration: 4s; 
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    &:hover{
+      animation-name: unset;
+    }
+  }
+
+  @keyframes rubik-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(90.0deg) }  
+    20% { transform: rotate(180.0deg) }
+    30% { transform: rotate(270.0deg) }
+    40% { transform: rotate(90.0deg) }
+    50% { transform: rotate(270.0deg) }
+    60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+  }
+
+  .wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s; 
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
   }
 }
 

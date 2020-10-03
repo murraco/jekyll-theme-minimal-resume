@@ -6,12 +6,9 @@ description: Jekyll Theme Minimal Resume
 
 # User settings
 username: Prashant Kabra
-user_description: I'm a nomad Software Engineer, always searching for the next challenge; no task is too scary nor too difficult. Lately I have been immersed in the <b>crypto-world</b> working for Radix, a London based startup trying to create the next massive scalable DLT. I'm one of the two guys behind all the JS related stuff.
 user_title: Software Engineer
 email: kabra.prashant016@gmail.com
-# twitter_username: lorem_ipsum
-# github_username:  lorem_ipsum
-# gplus_username:  lorem_ipsum
+
 plugins:
   - jekyll-sitemap
 exclude: ['package.json', 'src' , 'node_modules']

@@ -1,0 +1,25 @@
+- aboutme: Hello <span class="wave" title="Namaste!">👋</span>! I'm Prashant, a software engineer based in Boston, MA. I enjoy solving complex problems using code and building things that live on the internet. I'm always searching for the next challenge; no task is too scary nor too difficult. <br>When I'm not coding, you'll find me cooking, exercising, fidging with a Rubik's cube <img class="rubik-img" src="../assets/svg/rubik.svg" alt="rubix" title="Rubix's Cube"> or surfing the web for memes and dad jokes.
+
+- title: Design
+  description: I feel comfortable working on the front-end, going from pure CSS & HTML5 to Sass, Bootstrap or Angular or Jekyll and whatever!
+  icons:
+    - icon: html
+    - icon: sass
+    - icon: jekyll
+    - icon: bootstrap
+
+- title: Code
+  description: My main development languages are Java and JavaScript, but I have worked with Python and more..
+  icons:
+    - icon: java
+    - icon: javascript
+
+- title: Tools
+  description: Git, AWS, Packer, CirclCI, Kubernetes, Docker, Selenium, TestNg and more..
+  icons:
+    - icon: git
+    - icon: aws
+    - icon: terraform
+    - icon: docker
+
+
