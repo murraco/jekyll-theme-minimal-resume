@@ -24,6 +24,10 @@
 .experience-description {
     text-align-last: left;
     padding: 0 0 10px 0;
+    ul{
+        margin: 0;
+        padding-left: 20px;
+    }
 }
 .experience-company {
     color: $primary-color;

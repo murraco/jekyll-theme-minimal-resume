@@ -12,7 +12,8 @@
       - icon: react
   desc: >
     Completely automated CI/CD pipeline on Hybrid cloud infrastructure build
-    and deployed using terraform, and served using containers orchestrated by kubernetes
+    and deployed using terraform, and served using containers orchestrated by Kubernetes. 
+    Developed Frontend using Reactjs and backend developed using Java Springboot
 
 - name: "Insurance Policy Management System"
   repo: https://github.com/prashantk016/AdvBigdataArch_INFO7255
@@ -54,6 +55,7 @@
       - icon: nodejs
   desc: >
     Simple Coffee ordering web application. Developed using Angular5 and NodeJS/ExpressJS
+    Ability to search stores by location and to customize coffee and place order
 
 - name: To-Do Web App (FrontEnd)
   repo: https://github.com/prashantk016/Todo-WebApp-Angular5
@@ -65,8 +67,8 @@
       - icon: sass
       - icon: javascript
   desc: >
-    A Sticky PostIt style to-do web app. 
-    Initially developed using vallina javascript, later implemented in Angular 5
+    A Sticky PostIt style to-do web app.
+    Initially developed using vallina javascript, later implemented in Angular 5 and Typescript
 
 - name: Spreadsheet Web app
   repo: https://github.com/prashantk016/Spreadsheet-WebApp

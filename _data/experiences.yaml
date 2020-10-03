@@ -2,23 +2,27 @@
   period: September 2019 - Present
   company: Roundarch Isobar Inc.
   location: Boston, MA, USA
-  description: >
-    Isobar Desc
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  description: 
+    - point: Developed automated test scripts derived from complex business and functional requirements using Selenium Web automation and TestNG for test execution and management
+    - point: Setup and managed Jenkins based master-agent cloud infrastructure on AWS to facilitate remote build and execute test on multiple domains/languages simultaneously
+    - point: Assisted the team with integrating automated test scripts with continuous integration tools, setting up automation test infrastructure as well as scheduling test automation for multiple releases, using Jenkins and AWS EC2 instances
+    - point: Integrate automated test scripts with continuous integration tools set up automation test infrastructure as well as schedule test automation for multiple releases
 
 - title: Software Engineer Intern
   period: September 2018 - December 2018
   company: Roundarch Isobar Inc.
   location: Boston, MA, USA
-  description: >
-    Internship Desc
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+  description:
+    - point: Worked on one of the largest car rental companies’ websites project, developing automated test scripts derived from complex business and functional requirements
+    - point: Exposure to executing several types of tests, identify risks, and report issues under the direction of the team utilizing knowledge of the test automation process, development process, QA process, and build-release engineering
+    - point: Utilized Selenium WebDriver test framework for test automation and JUnit to execute the tests
 
 - title: Associate Software Engineer
   period: August 2014 - January 2016
   company: Accenture Services
   location: Mumbai, India
-  description: >
-    Accenture Desc
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  description:
+    - point: Worked on a SAP support project for a multibillion company, BHP Billiton, as part of Freight management (FM Module) team
+    - point: Found and fixed bugs in the system after verifying with the functional team and with the end customer
+    - point: Communicated with users one-on-one to understand and implement new potential features and enhancemnet
+    - point: Identified the root cause of issues and made code fixes in the system rectifying the problem

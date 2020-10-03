@@ -21,25 +21,13 @@
                 </div>
 
                 <div class="experience-description text-justify">
-                    {{ experience.description }}
 
-                    {% if experience.apps %}
+                    <ul>
+                    {% for item in experience.description %}
+                        <li> {{ item.point }}</li>
 
-                        <ul class="mobile-apps">
-
-                            {% for app in experience.apps %}
-
-                                <li>
-                                    <h4 class="mobile-app-name"><a href="{{ app.link }}"> {{ app.name }} </a></h4>
-                                    <p class="mobile-app-description"> {{ app.desc }}</p>
-                                </li>
-
-                            {% endfor %}
-
-                        </ul>
-
-                    {% endif %}
-
+                    {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>
