@@ -5,7 +5,7 @@
     <div class="row skill-container">
     {% for skill in include.skills %}
     {% for item in skill.list %}
-    <div class="col-sm-3 mx-auto {{ skill.type | downcase}}" title="{{ skill.type}}">
+    <div class="col-sm-3 mx-auto {{ skill.type | downcase}}" title="{{ skill.type}}"  data-aos="zoom-out" data-aos-offset="-50">
         <div class="card skill-item">
             <div class="skill card-body">
                 <span class="skill-list">{{ item.name }}</span>

@@ -5,22 +5,20 @@
   </div>
   <div class="user">
     {% for category in include.data offset:1%} 
-    <div class="tech">
+    <div class="tech"  data-aos="fade-down">
       <h2>{{ category.title }}</h2>
       {% if category.icons %}
         {% for icon in category.icons %}
             <span class="tech-icons">
                   <img class="{{ icon.icon }}" src="../assets/svg/{{ icon.icon }}.svg" alt="{{ icon.icon }}" data-toggle="tooltip" data-placement="top" title="{{ icon.icon | upcase }}">
             </span>
-             
-        
         {% endfor %}
       {% endif %}
       <p>{{ category.description}}</p>
     </div>
     {% endfor %}
     </div>
-    <div class="download-resume-container text-center">
+    <div class="download-resume-container text-center" data-aos="zoom-in">
       <a class="download-resume-btn" target="_blank" href="https://drive.google.com/file/d/1X-paiyASsbZ25MQwxFjGa1UqX84hQ52I/view" role="button" title="Download resume"> <i class="fas fa-download"></i> &nbsp;Download Resume</a>
     </div>
 </div>

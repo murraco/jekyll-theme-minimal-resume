@@ -23,7 +23,7 @@
       <section id="education" class="anchor">
         {% include education.html educations = site.data.educations %}
       </section>
-      <div class="clip-arrow-down"></div>
+      <div class="clip-arrow-down" data-aos="fade-up" data-aos-offset="-100"></div>
       <section id="contact" class="anchor">
         {% include contact.html %}
       </section>
@@ -38,7 +38,8 @@
       <script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
       <script src="{{ '/assets/js/jquery-3.2.1.min.js' | prepend: site.baseurl }}"></script>
       <script src="{{ '/assets/js/jquery.isotope.js' | prepend: site.baseurl }}"></script>
-      <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
-       </body>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script> 
+    </body>
 </html>

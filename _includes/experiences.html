@@ -3,13 +3,13 @@
     <h1 class="text-center section-heading heading"> <span>Work Experiences </span></h1>
     {% for experience in include.experiences %}
         <div class="row experience">
-            <div class="col-md-4 text-right">
+            <div class="col-md-4 text-right"  data-aos="fade-left">
                 <h3 class="experience-company text-right ">{{ experience.company }}</h3>
                        
                 <p class="experience-period" >{{ experience.period }}</p>
 
             </div>
-            <div class="col-md-8 timeline">
+            <div class="col-md-8 timeline" data-aos="fade-right" data-aos-offset="-50">
                 <div class="row item">
                    
                        <h3 class="experience-title col-md-8" >{{ experience.title }}</h3>

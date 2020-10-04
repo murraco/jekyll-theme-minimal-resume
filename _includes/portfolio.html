@@ -2,7 +2,7 @@
     <h1 class="text-center section-heading heading"> 
         <span>Portfolio</span>
     </h1>
-    <div class="portfolioContainer row">
+    <div class="portfolioContainer row" data-aos="zoom-in">
 
         {% for item in include.items %}
         <div class="col-lg-4 {% if forloop.index > 5 %} collapse multi-collapse {% endif %}">
@@ -34,7 +34,7 @@
         {% endfor %}
 
     </div>
-    <div class="text-right portfolio-more-btn">
+    <div class="text-right portfolio-more-btn" data-aos="zoom-in" data-aos-once="true">
         <button class="btn text-right" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false">Show More..</button>
     </div>
 </div>
