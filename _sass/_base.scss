@@ -183,7 +183,11 @@ sup, sub {
         clip-path: polygon(0px 0%, 50% 60%, 100% 0, 100% 100%, 0% 100%);
         height: 60px;
     }
-    
+    .anchor{
+        &:nth-child(even){
+            clip-path: polygon(0 0%, 100% 1%, 100% 99%, 0% 100%)
+        }
+    }
   
   
-  }
+}
