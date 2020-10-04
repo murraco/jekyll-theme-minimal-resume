@@ -1,9 +1,10 @@
 
-# Jekyll Resume Theme
+# Jekyll Resume Theme [![Netlify Status](https://api.netlify.com/api/v1/badges/c37f8c1e-a0f6-42c5-b1fe-3819b7f62c80/deploy-status)](https://app.netlify.com/sites/resumeprashantk/deploys)
 
 Based on [Mauricio Urraco's](https://github.com/murraco) resume theme website
+
 Live demo available [here](https://resumeprashantk.netlify.app/)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c37f8c1e-a0f6-42c5-b1fe-3819b7f62c80/deploy-status)](https://app.netlify.com/sites/resumeprashantk/deploys)
+
 
 # Stack
   
