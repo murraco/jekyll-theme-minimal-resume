@@ -18,7 +18,7 @@ Live demo at #####
 # Screenshot
 
 <p  align="center">
-<img src="https://github.com/prashantk016/jekyll-theme-resume/blob/master/screenshot.png"  width="90%"  />
+<img src="/screenshot.png"  width="90%"  />
 </p>
 
 
