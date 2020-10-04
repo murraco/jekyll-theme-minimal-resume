@@ -11,4 +11,6 @@ email: kabra.prashant016@gmail.com
 
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
+
 exclude: ['package.json', 'src' , 'node_modules']
