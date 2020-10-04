@@ -137,3 +137,6 @@ $(document).ready(function(){
   }
  });
  });
+
+ // Initialization AOS
+ AOS.init();
