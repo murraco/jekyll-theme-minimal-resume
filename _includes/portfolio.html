@@ -2,10 +2,10 @@
     <h1 class="text-center section-heading heading"> 
         <span>Portfolio</span>
     </h1>
-    <div class="portfolioContainer row" data-aos="zoom-in">
+    <div class="portfolioContainer row">
 
         {% for item in include.items %}
-        <div class="col-lg-4 {% if forloop.index > 5 %} collapse multi-collapse {% endif %}">
+        <div class="col-lg-4 {% if forloop.index > 5 %} collapse multi-collapse {% endif %}"  data-aos="fade-out">
             <div class="card portfolio-item  text-center">
                 
                     <img class="card-img-top img-fluid " src="{{ item.img }}"  alt="Card image cap"> 
