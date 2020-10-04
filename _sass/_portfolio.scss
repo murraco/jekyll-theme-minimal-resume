@@ -46,9 +46,8 @@
         }
 
         .tech-icons{
-           max-height: 2.5em;
-           max-width: 2.5em;
-           width: auto;
+           height: 2.5em;
+           width: 2.5em;
            display: inline-flex;
            img{
                
@@ -116,8 +115,8 @@
 @media (max-width: 834px) {
 
     #portfolio .container .tech-icons{
-        max-width: 2em;
-        max-height: 2em;
+        width: 2em;
+        height: 2em;
     }
     .portfolioContainer {
         
