@@ -1,23 +1,23 @@
 <style>
-h3 {
-  font-family: 'Antic Slab',serif;
-  color: grey;
+
+h1 {
+  font-family: Montserrat,sans-serif;
   font-weight: 400;
+
+}
+.row {
+  display: flex;
+
 }
 .column {
-  float: left;
-  width: 50%;
+  flex: 50%;
   padding: 10px;
+  vertical-align: middle;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 button {
-  margin-right: 50px;
+  margin-top: 15px;
+  margin-bottom: 40px;
 }
 .btn {
   background-color: #666666;
@@ -32,73 +32,125 @@ button {
   outline: 0;
 
 }
+iframe {
+  width:940px;
+  height:528.75px;
+}
 
 .btn:hover {
   background-color:DodgerBlue;
   border: none;
   outline: 0;
 }
+.chicago {
+  display: block;
+  margin-top: 50px;
+  margin-left: 15px;
+}
+.interests {
+  text-align: center;
+  margin-left: 55px;
+  color: red;
+}
 
+@media only screen and (max-width: 400px) {
+  .column {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .row {
+    display: block;
+
+  }
+  iframe {
+    width:auto;
+    height:auto;
+  }
+  button {
+    margin-right: auto;
+
+  }
+  .chicago {
+    display: block;
+    margin: auto;
+  }
+  .interests {
+
+    text-align: center;
+    color: blue;
+  }
+
+}
 
 </style>
 
 <div class="user-details">
-  <h1>About Me</h1>
+  <h1 style="font-family:Montserrat,sans-serif;">About Me</h1>
 
   <div class="row">
     <div class="column">
-        <p style='text-align:left;'>Thanks for checking out my website. Here you'll find my experience and qualifications as well as, my interests and aspirations.
+        <p style='text-align:left;font-family:Montserrat,sans-serif;'>
+        Thanks for checking out my website. Here you'll find my experience and qualifications as well as, my interests and aspirations.
         I also run a blog where I documenent my experiences both in and out of my workspace.
         I’m currently in Istanbul, Turkey working as a data scientist in the telecommunications company, Turknet.
         As of now I’m focused on gaining more work experience, but my long term goal is to pursue higher education in the field of Data Science or Machine Learning.
         </p>
 
-        <p style='text-align:left;'>I've been programming in Python for the last 4 years and feel more than comfortable using it.
+        <p style='text-align:left;font-family:Montserrat,sans-serif;'>
+        I've been programming in Python for the last 4 years and feel more than comfortable using it.
         I'm also proficient in Java, HTML, D3, SQL, and more that you'll see on my resume. Some of my strengths include creativity, problem solving, and dedication.
         I also put heavy emphasis on understanding new concepts and tools as holistically as possible before applying them.
         </p>
 
-        <p style='text-align:left;'>On final note before you take a look around, my legal name is Kayhan Eryilmaz, but my mothers maiden name is Liao.
+        <p style='text-align:left;font-family:Montserrat,sans-serif;'>
+          On final note before you take a look around, my legal name is Kayhan Eryilmaz, but my mothers maiden name is Liao.
         I enjoy incorporating it in my usernames as a way to appreciate my cultural background... It was also a way cooler looking domain name.</p>
       </div>
-    <br></br>
-    <img src='./assets/img/me.jpg' height="550px">
-    <figcaption>Millenium Park, Chicago, Illinois, 2018</figcaption>
-
+      <div class="column" >
+        <img src='./assets/img/me.jpg' width=100%; class="chicago">
+        <figcaption style='font-family:Montserrat,sans-serif;'>
+          Millenium Park, Chicago, Illinois, 2018</figcaption>
+      </div>
   </div>
-
-
 </div>
 
 
 <div class="user-details">
-<h1>Experience</h1>
-<img src='./assets/img/Kayhan Eryilmaz Resume 21-22.png' height="1250px">
-<form method="get" action='./assets/Kayhan Eryilmaz Resume 21-22.pdf'>
-<button class="btn">Download</button>
-</form>
+  <h1>Experience</h1>
+  <img src='./assets/img/Kayhan Eryilmaz Resume 21-22.png' width=100%>
+  <a href="./assets/Kayhan Eryilmaz Resume 21-22.pdf" download="Kayhan_Eryilmaz_Resume.pdf">
+    <button class="btn">Download</button>
+</a>
 </div>
-
 <div class="user-details">
-  <h1>Intersts and Hobbies </h1>
-  <p style='text-align:left;margin-left:15px;'> My most prominent hobby is building custom mechanical keyboards. I discovered the hobby in 2019 and have been apart of the exponentially growing keyboard community since. Here are some of the keyboards I’ve built.
-  <br></br>
-  <img src='./assets/img/sakura.jpg' height="450x">
-  <img src='./assets/img/bento.jpg' height="458px">
-  <br></br>
-  <p style='text-align:left;margin-left:15px;'>I very much enjoy the process of researching and building keyboards and plan on making more in the near future. If you’re curious about this community I’m very fond of, here is a video from my favorite keyboard content creator, TaehaTypes, where he explains the hobby more in depth:</P>
+  <h6 style="opacity:0%">sus</h6>
 
-<iframe width="940" height =528.75; src="https://www.youtube.com/embed/Qr3nYR15wxU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h1>Interests</h1>
+  <p style='text-align:left;font-family:Montserrat,sans-serif;'>
+    My most prominent hobby is building custom mechanical keyboards. I discovered the hobby in 2019 and have been apart of the exponentially growing keyboard community since. Here are some of the keyboards I’ve built. </P>
+  <img src='./assets/img/sakura.jpg' width=100%>
+  <img src='./assets/img/bento.jpg'width=100%>
+
+  <p style='text-align:left;font-family:Montserrat,sans-serif;'>
+    I very much enjoy the process of researching and building keyboards and plan on making more in the near future. If you’re curious about this community I’m very fond of, here is a video from my favorite keyboard content creator, TaehaTypes, where he explains the hobby more in depth:</P>
+
+<iframe src="https://www.youtube.com/embed/Qr3nYR15wxU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-<p style='text-align:left;margin-left:15px;'>Additionally, I really enjoy traveling. My Taiwanese heritage has given me the opportunity to travel lots of different countries in Asia. Some of my favorite place I visited are Taiwan, Thailand, and Singapore. The places I want to go next are Japan and Korea. I’m also currently learning Japanese. Aside from Asia, I also wish to explore places I haven’t been in Europe, such as Germany and the Netherlands.
+<p style='text-align:left;font-family:Montserrat,sans-serif;'>
+Additionally, I really enjoy traveling. My Taiwanese heritage has given me the opportunity to travel lots of different countries in Asia. Some of my favorite place I visited are Taiwan, Thailand, and Singapore. The places I want to go next are Japan and Korea. I’m also currently learning Japanese. Aside from Asia, I also wish to explore places I haven’t been in Europe, such as Germany and the Netherlands.
 </p>
-<p style='text-align:left;margin-left:15px;'>Lastly, I like to spend my free time watching anime and reading manga. I also enjoy keeping up with competitive e-sports such as League of Legends and Smash Bros.
+<p style='text-align:left;font-family:Montserrat,sans-serif;'>
+Lastly, I like to spend my free time watching anime and reading manga. I also enjoy keeping up with competitive e-sports such as League of Legends and Smash Bros.
 </p>
 
 
 </div>
 
+
 <div class="user-details">
-  <h1>Contact </h1>
-  <p>You can contact me through the links provided in the icons above </p>
+  <h1>Contact</h1>
+  <p style='text-align:left;font-family:Montserrat,sans-serif;'>
+You can contact me through the links provided in the icons above </p>
+</div>

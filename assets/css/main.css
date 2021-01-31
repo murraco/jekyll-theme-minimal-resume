@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  margin: 0
+  margin: 0;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
@@ -4450,7 +4450,7 @@ sub, sup {
 }
 
 #particles-js {
-  background: #1a222c;
+  background: #1b1b1b;
   display: flex;
   vertical-align: bottom;
   min-height: 100vh;
@@ -4473,7 +4473,9 @@ sub, sup {
   left: 50%;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  display: block;
+  line-height: 1
 }
 
 .header .site-title {
@@ -4489,6 +4491,15 @@ sub, sup {
     font-size: 76px
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .header-icons {
+    margin-top:100px;
+  }
+}
+
+
+
 
 .header .site-description {
   font-size: 20px;
@@ -4599,7 +4610,7 @@ sub, sup {
   font-size: 120%;
   width: 90%;
   margin: 0 auto;
-  max-width: 960px
+  max-width: 960px;
 }
 
 @media only screen and (min-width:768px) {

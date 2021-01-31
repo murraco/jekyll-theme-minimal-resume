@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", function() {
   particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 6,
+      "value": 15,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#535eb1"
+      "value": "#29b49c"
     },
     "shape": {
       "type": "polygon",
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "random": true,
       "anim": {
         "enable": true,
-        "speed": 10,
+        "speed": 3,
         "size_min": 40,
         "sync": false
       }
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     "move": {
       "enable": true,
-      "speed": 8,
+      "speed": 3,
       "direction": "none",
       "random": false,
       "straight": false,
