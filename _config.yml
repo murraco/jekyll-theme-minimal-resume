@@ -1,7 +1,7 @@
 # Site settings
 title: Kayhan
-description: Jekyll Theme Minimal Resume
-# baseurl: "" # the subpath of your site, e.g. /blog
+description: its me baby
+baseurl: "kayhanliao" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
