@@ -2,7 +2,7 @@
 title: Prashant Kabra
 description: Jekyll Resume
 # baseurl: "" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://prashantkabra.me" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Prashant Kabra
