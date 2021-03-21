@@ -22,8 +22,14 @@
             
         }
 
-        .repo-name{
+        .repo-name {
+            a{
+                color: $primary-color;
+            }
             color: $primary-color;
+            &:hover{
+                text-decoration: underline;
+            }
         }
         .repo-title-desc{
             

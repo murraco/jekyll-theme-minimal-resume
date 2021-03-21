@@ -139,6 +139,4 @@ $(document).ready(function(){
  });
 
  // Initialization AOS
- AOS.init({
-  disable: 'phone'
-});
+ AOS.init();
