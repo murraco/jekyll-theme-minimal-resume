@@ -51,12 +51,12 @@ sup, sub {
 .heading span{
     letter-spacing: 3px;
     text-transform: capitalize;
-    border-bottom: 3px solid #11ABB0;
+    border-bottom: 3px solid $primary-color;
 }
 
 .timeline {
 
-    border-left: 3px solid #11ABB0;
+    border-left: 3px solid $primary-color;
     border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
     position: relative;
@@ -81,7 +81,7 @@ sup, sub {
             -webkit-background-clip: padding-box;
             background-clip: padding-box;
             background: #fff;
-            border: 3px solid #11ABB0;
+            border: 3px solid $primary-color;
         }
 
         &:after {
@@ -100,7 +100,7 @@ sup, sub {
             -moz-background-clip: padding;
             -webkit-background-clip: padding-box;
             background-clip: padding-box;
-            background: #11ABB0;
+            background: $primary-color;
             z-index: 10;
         }
     }
@@ -131,29 +131,29 @@ sup, sub {
     z-index: 99; 
     border: none;
     outline: none;
-    color: $primary-color; 
     cursor: pointer;
     padding: 15px; 
     border-radius: 10px; 
     font-size: 2.5em;
     animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     transform-origin: bottom;
     color: $main;
    .fa-circle{
         color:white
     }
     &:hover {
-        animation-duration: 1s;
+        animation-duration: 0.1s;
         text-decoration: none;
         animation-name: bounce-1;
         animation-timing-function: linear;
         color: $main; 
+        transform: scale(1.1);
+
     }
     @keyframes bounce-1 {
-        0%   { transform: translateY(0); }
-        50%  { transform: translateY(-30px); }
-        100% { transform: translateY(0); }
+        0%   { transform: scale(1.0); }
+        100% { transform: scale(1.15); }
     }
 
     
