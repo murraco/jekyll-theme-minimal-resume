@@ -1,13 +1,13 @@
 # Site settings
 title: Prashant Kabra
-description: Jekyll Resume
+description: Portfolio
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://prashantkabra.me" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Prashant Kabra
 user_title: Software Engineer
-email: kabra.prashant016@gmail.com
+email: kabra.p@outlook.com
 
 plugins:
   - jekyll-sitemap
