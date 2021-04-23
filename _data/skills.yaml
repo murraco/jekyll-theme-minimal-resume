@@ -2,6 +2,7 @@
   list:
     - name: Java
     - name: C#
+    - name: Python
 - type: Cloud
   list:
     - name: AWS
