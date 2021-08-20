@@ -1,28 +1,28 @@
 /* sweetScroll load */
 document.addEventListener("DOMContentLoaded", function () {
-  const sweetScroll = new SweetScroll({/* some options */});
+  const sweetScroll = new SweetScroll({/* some options */ });
 
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
   particlesJS('particles-js', {
     "particles": {
       "number": {
-        "value": 160,
+        "value": 128,
         "density": {
           "enable": true,
-          "value_area": 500
+          "value_area": 710.2342786683108
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#03ef62"
       },
       "shape": {
-        "type": "circle",
+        "type": "polygon",
         "stroke": {
-          "width": 0,
-          "color": "#000000"
+          "width": 1,
+          "color": "#06bdfc"
         },
         "polygon": {
-          "nb_sides": 5
+          "nb_sides": 7
         },
         "image": {
           "src": "img/github.svg",
@@ -51,11 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "line_linked": {
-        "enable": false,
-        "distance": 150,
-        "color": "#ffffff",
+        "enable": true,
+        "distance": 78.91491985203453,
+        "color": "#03ef62",
         "opacity": 0.4,
-        "width": 1
+        "width": 0.7891491985203453
       },
       "move": {
         "enable": true,
@@ -76,18 +76,18 @@ document.addEventListener("DOMContentLoaded", function () {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false,
-          "mode": "bubble"
+          "enable": true,
+          "mode": "repulse"
         },
         "onclick": {
-          "enable": false,
+          "enable": true,
           "mode": "repulse"
         },
         "resize": true
       },
       "modes": {
         "grab": {
-          "distance": 400,
+          "distance": 299.7002997002997,
           "line_linked": {
             "opacity": 1
           }
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "speed": 3
         },
         "repulse": {
-          "distance": 400,
+          "distance": 175.82417582417582,
           "duration": 0.4
         },
         "push": {
