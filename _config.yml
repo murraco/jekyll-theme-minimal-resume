@@ -10,7 +10,12 @@ user_description: I'm a Software Engineer from Argentina, always searching for t
 user_title: Software Engineer
 email: mauriurraco@gmail.com
 # twitter_username: lorem_ipsum
-# github_username:  lorem_ipsum
+instagram_username: mauriciourraco7
+facebook_username: mauricio.urraco
+linkedin_username: murraco
+github_username:  murraco
+# medium_username: lorem_ipsum
+# medium_url: lorem_ipsum.medium.com
 # gplus_username:  lorem_ipsum
 
 exclude: ['package.json', 'src' , 'node_modules']
