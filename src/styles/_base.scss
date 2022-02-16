@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Raleway');
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab|Antic+Slab');
-
 * {
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -13,8 +10,12 @@ body {
     line-height: 1.5;
     color: #555;
 
-    font-family: 'Antic Slab', serif;
-    font-weight: 400;
+    @font-face {
+        font-family: 'Antic Slab', serif;
+        font-weight: 400;
+        src: local('Antic Slab'),
+            url('../assets/fonts/AnticSlab-Regular.ttf') format ('ttf');
+
 }
 article, aside, figcaption, figure, footer, header, nav, section {
     display: block;
@@ -49,4 +50,5 @@ a img {
 }
 sup, sub {
     line-height: 0;
+}
 }
