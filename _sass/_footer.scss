@@ -1,0 +1,21 @@
+.footer {
+  background: $main;
+  text-align: center;
+  color: #FFF;
+  padding-bottom: 1.5em;
+  
+  .love {
+    color: red;
+  }
+  a {
+    text-decoration: none;
+    margin: 0;
+    color: #FFF;
+    &:hover{
+      color: $sec;
+    }
+    &:active {
+      color: $sec;
+    }
+  }
+}

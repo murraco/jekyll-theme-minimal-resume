@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab|Antic+Slab');
+
+* {
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 130%;
+    line-height: 1.5;
+    color: #555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+article, aside, figcaption, figure, footer, header, nav, section {
+    display: block;
+}
+
+.anchor{
+    padding-top: 10px;
+
+    &:nth-child(even){
+        background-color: #d3d3d329;
+        -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+        clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+        padding: 40px 10px;
+    }
+}
+.container{
+    max-width: 1340px;
+}
+ul, ol {
+    margin: 1em 0;
+    padding-left: 40px;
+}
+p, figure {
+    margin: 1em 0;
+}
+a img {
+    border: none;
+}
+sup, sub {
+    line-height: 0;
+}
+.camelCase{
+    text-transform:capitalize;
+}
+.heading span{
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    border-bottom: 3px solid $primary-color;
+}
+
+.timeline {
+
+    border-left: 3px solid $primary-color;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+    padding: 0 30px;
+
+    .item {
+        &:before {
+
+            content: "";
+            position: absolute;
+            left: -12px;
+            top: -2px;
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            background: #fff;
+            border: 3px solid $primary-color;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: -6px;
+            top: 4px;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            background: $primary-color;
+            z-index: 10;
+        }
+    }
+}
+
+.container {
+    // @extend %box-shadow-container;
+    margin: 10px auto;
+   // border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 24px;
+    .row {
+        padding-bottom: 2px;
+    }
+}
+
+.clip-arrow-down{
+    clip-path: polygon(0px 0%, 50% 80%, 100% 0, 100% 100%, 0% 100%);
+    width: 100%;
+    height: 120px;
+    background-color: $main;
+}
+
+.scroll-to-top{
+
+    position: fixed;
+    bottom: 60px; 
+    right: 50px; 
+    z-index: 99; 
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 2.5em;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    transform-origin: bottom;
+    color: $main;
+   .fa-circle{
+        color:white
+    }
+    &:hover {
+        animation-duration: 0.1s;
+        text-decoration: none;
+        animation-name: bounce-1;
+        animation-timing-function: linear;
+        color: $main; 
+        transform: scale(1.1);
+
+    }
+    @keyframes bounce-1 {
+        0%   { transform: scale(1.0); }
+        100% { transform: scale(1.15); }
+    }
+
+    
+}
+
+%boxshadow {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+%box-shadow-container {
+    @extend %boxshadow;
+    background-color: #fff;
+    padding: 25px
+}
+
+%section-heading {
+    padding-bottom: 50px;
+    font-weight: bold;
+    color: #676869;
+}
+
+
+@media (max-width: 834px) {
+
+    .clip-arrow-down{
+        clip-path: polygon(0px 0%, 50% 60%, 100% 0, 100% 100%, 0% 100%);
+        height: 60px;
+    }
+    .anchor{
+        &:nth-child(even){
+            clip-path: polygon(0 0%, 100% 1%, 100% 99%, 0% 100%)
+        }
+    }
+  
+  
+}

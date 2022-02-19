@@ -1,0 +1,243 @@
+#particles-js {
+  background: $main;
+  display: flex;
+  vertical-align: bottom;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: sticky;
+  z-index: 100;
+  .particles-js-canvas-el {
+    height: 100vh !important;
+  }
+
+  .switchToggle{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    input[type=checkbox]
+    {
+      height: 0; width: 0; visibility: hidden; position: absolute; 
+    }
+
+    label {
+      cursor: pointer; text-indent: -9999px; width: 70px; max-width: 70px; height: 20px; background: #d1d1d1; display: block; border-radius: 100px; position: relative;
+      font-size: 0.7em;
+
+      &:after {
+        content: ''; position: absolute; top: 2px; left: 2px; width: 15px; height: 15px; background: #fff; border-radius: 90px; transition: 0.3s; 
+      }
+
+      &:active:after {width: 60px; } 
+    }
+
+    input:checked + label, input:checked + input + label  {
+      background: -webkit-linear-gradient(left, rgb(245, 73, 73) , rgb(223, 223, 87), rgb(46, 197, 46),); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(right,rgb(245, 73, 73) , rgb(223, 223, 87), rgb(46, 197, 46),); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(right,rgb(245, 73, 73) , rgb(223, 223, 87), rgb(46, 197, 46),); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to right, rgb(245, 73, 73) , rgb(223, 223, 87), rgb(46, 197, 46),); /* Standard syntax (must be last) */
+  
+    }
+
+    input + label:before, input + input + label:before {
+      content: 'White'; position: absolute; top: -1px; left: 20px; width: 15px; height: 15px; border-radius: 90px; transition: 0.3s; text-indent: 0; color: $main; 
+    }
+
+    input:checked + label:before, input:checked + input + label:before {
+      content: 'Colors'; position: absolute; top: -1px; left: 10px; width: 15px; height: 15px; border-radius: 90px; transition: 0.3s; text-indent: 0; color: #fff; 
+    }
+
+    input:checked + label:after, input:checked + input + label:after {
+      left: calc(100% - 2px); transform: translateX(-100%); 
+    }
+
+
+  }
+}
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1;
+  text-align: center;
+  color:#FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  .site-title {
+    font-size: 50px;
+    display: block;
+    line-height: 1;
+    color: #FFF;
+    @media only screen and (min-width:$cut){
+      margin: 0;
+      font-size: 76px;
+    }
+  }
+  .site-description {
+    font-size: 20px;
+    display: block;
+    line-height: 1;
+    color: #FFF;
+    margin-top: 10px;
+    @media only screen and (min-width:$cut){
+      font-size: 34px;
+    }
+  }
+
+  #box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background: url('../profile_circle.png') no-repeat;
+    background-size: auto;
+    background-size: contain;
+    margin: 0 auto;
+    
+  }
+  .gradient-border {
+    --borderWidth: 4px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+   // transition: transform 0.2s ease-in-out, 0.5s;
+    &:hover{
+      --borderWidth: 8px;
+      &::after{
+        animation: animatedgradient 2s ease alternate infinite;
+      }
+    }
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: 100%;
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+    
+  }
+  
+  
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+.header-links {
+  margin: 10px;
+  .link {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px;
+    @media only screen and (min-width:$cut){
+      font-size: 20px;
+    }
+  }
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  &:before, &:after, *{ 
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  text-align: center;
+  a {
+    // no borders
+    outline: 0 !important;
+    border: none !important;
+    outline-style: none !important;
+    -moz-outline-style: none !important;
+
+    padding: none;
+    margin: none;
+  }
+  .icon {
+    text-align: center;
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    transition: background-color 0.5s ease-in-out, 1s;
+    &:hover {
+      color: $main;
+      background: #FFF;
+    }
+    &:active {
+      color: $main;
+      background: #FFF;
+    }
+    @media only screen and (min-width:$cut) {
+      width: 40px;
+      height: 40px;
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+}
+
+.down {
+  color: #FFF;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  // no borders
+  outline: 0 !important;
+  border: none !important;
+  outline-style: none !important;
+  -moz-outline-style: none !important;
+  .icon {
+      position: absolute;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      fill: #fff;
+      -webkit-animation: pulse 1.3s infinite;
+      animation: pulse 1.3s infinite;
+      &:hover {
+        color: $sec;
+      }
+      &:active {
+        color: $sec;
+      }
+  }
+}

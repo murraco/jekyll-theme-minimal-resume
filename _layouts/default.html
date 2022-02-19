@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 <html lang="en">
   {% include head.html %}
-  <body>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="150">
+    
       {% include header.html %}
-      <section id="about">
-        {% include about.html %}
+      
+      {% include nav.html class="justify-content-center" links = site.data.links type="navbar" %}
+      <section id="about" class="anchor">
+        {% include about.html data = site.data.about %}
+      </section>
+      <section id="experience" class="anchor">
+        {% include experiences.html experiences = site.data.experiences %}
+      </section>
+      <section id="skills" class="anchor">
+        {% include skills.html skills = site.data.skills %}
+      </section>
+      <section id="portfolio" class="anchor" >
+        {% include portfolio.html items=site.data.portfolio %}
+      </section>
+    
+      <section id="education" class="anchor">
+        {% include education.html educations = site.data.educations %}
+      </section>
+      <div class="clip-arrow-down" data-aos="fade-up" data-aos-offset="-100"></div>
+      <section id="contact" class="anchor">
+        {% include contact.html %}
       </section>
         {{ content }}
       {% include footer.html %}
-  </body>
+      <a href="#" class="scroll-to-top" title="Scroll to top" data-scroll>
+        <i class="fas fa-circle fa-stack-1x"></i>
+        <i class="fas fa-chevron-circle-up fa-stack-1x"></i>
+      </a>
+
+      <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
+      <script src="{{ '/assets/js/jquery-3.2.1.min.js' | prepend: site.baseurl }}"></script>
+      <script src="{{ '/assets/js/jquery.isotope.js' | prepend: site.baseurl }}"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script> 
+    </body>
 </html>

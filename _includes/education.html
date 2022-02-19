@@ -1,0 +1,32 @@
+<div class="container text-sm-center">
+    <h1 class="text-center section-heading heading"> <span> Education</span></h1>
+    <div class="" data-aos="fade-up" data-aos-offset="-50">
+    {% for education in include.educations %}
+
+    <div class="">
+        <div class="education-item">
+            <h3 class="theme-color">
+                <span class="degree"><b>{{ education.degree }} | GPA: {{education.gpa}}</b></span>
+            </h3>
+            <p class="univ-graduation">
+                <span class="university">
+                    <i class="fa fa-university"> </i>
+                    {{ education.university }}
+                </span>
+                <!-- <span class="location">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    {{ education.location }}
+                </span> -->
+                <span class="date camelCase">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    {{ education.graduation }}
+                </span>
+                <!-- <div class="camelCase">
+                    Coursework: {{ education.courses}}
+                </div> -->
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>

@@ -1,0 +1,36 @@
+<div class="container">
+
+    <h1 class="text-center section-heading heading"> <span>Work Experiences </span></h1>
+    {% for experience in include.experiences %}
+        <div class="row experience">
+            <div class="col-md-4 text-right"  data-aos="fade-left">
+                <h3 class="experience-company text-right ">{{ experience.company }}</h3>
+                       
+                <p class="experience-period" >{{ experience.period }}</p>
+
+            </div>
+            <div class="col-md-8 timeline" data-aos="fade-right" data-aos-offset="-50">
+                <div class="row item">
+                   
+                       <h3 class="experience-title col-md-8" >{{ experience.title }}</h3>
+                   
+                        <span class="col-md-4 experience-location float-right float-right text-right">
+                            <i class="fa fa-map-marker-alt experience-icon-map-marker" aria-hidden="true"></i> {{ experience.location }}
+                        </span>
+                    
+                </div>
+
+                <div class="experience-description text-justify">
+
+                    <ul>
+                    {% for item in experience.description %}
+                        <li> {{ item.point }}</li>
+
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    {% endfor %}
+</div>

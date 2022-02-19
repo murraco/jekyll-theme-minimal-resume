@@ -1,0 +1,37 @@
+- type: Programming-languages
+  list:
+    - name: Java
+    - name: C#
+    - name: Python
+- type: Cloud
+  list:
+    - name: AWS
+    - name: Jenkins
+    - name: CircleCI
+    - name: Packer
+- type: Containerization
+  list:
+    - name: Kubernetes
+    - name: Terraform
+    - name: Docker
+- type: Web-Technologies
+  list:
+    - name: JavaScript
+    - name: Angular
+    - name: NodeJS
+    - name: Bootstrap
+    - name: Sass
+- type: Testing-Frameworks
+  list:
+    - name: TestNG
+    - name: JUnit
+    - name: Selenium WebDriver
+    - name: JMeter
+- type: Databases
+  list:
+    - name: MySQL
+    - name: Redis
+- type: Tools
+  list:
+    - name: Git
+    - name: Jira

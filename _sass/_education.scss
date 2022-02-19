@@ -1,0 +1,33 @@
+#education{
+    .row{
+        max-width: 80%;
+        margin: 0 auto;
+        
+    }
+    .univ-graduation{
+        font-size: .9em;
+    }
+    .university{
+        text-transform: capitalize;
+        display: block;
+        
+    }
+    .degree{
+        color: $primary-color;
+    }
+    i{
+        color: $primary-color   ;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    #education {
+        .row .education-item{
+            border: unset;  
+        }
+        .location{
+            display: hidden;
+        }
+    }
+}

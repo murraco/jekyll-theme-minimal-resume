@@ -1,7 +1,8 @@
 <footer class="footer">
-    <!-- <p>&copy; {{ site.username }}</p> -->
-    <p>Built with Jekyll and <span class="love">❤</span> by <a href="#">Prashant Kabra</a></p>
+    <div>Built with <a href="https://jekyllrb.com/">Jekyll<img src="../assets/svg/jekyll.svg" style="height: 25px;"></a>and <span class="love">❤</span> by <a href="{{ site.data.profile.social.linkedin }}">Prashant Kabra</a>
+    </div>
+    <div style="font-size: .8em; color:gray">
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </div>
 </footer>
-<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+

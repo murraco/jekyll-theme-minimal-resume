@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+#particles-js {
+  background: $main;
+  display: flex;
+  vertical-align: bottom;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: sticky;
+  z-index: 100;
+  .particles-js-canvas-el {
+    height: 100vh !important;
+  }
+}
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:"Nunito Sans";
+  font-size: 1em;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  button {
+    font-family:"Nunito Sans";
+  }
+  ul {
+    list-style-type: none;
+    padding-inline-start: 35px;
+  }
+  svg {
+    background-color: rgba($main, 0.5);
+    width: 100%;
+    fill: white;
+    stroke: white;
+  }
+  h1 {
+    font-size: 7.5em;
+    margin: 15px 0px;
+    font-weight:bold;
+    color:whitesmoke;
+  }
+  h2 {
+    font-weight:bold;
+    color:whitesmoke;
+  }
+  p{
+    
+    color:whitesmoke;
+  }
+  h1,h2,p{
+    background-color: rgba($main, 0.5);
+  }
+  .btn {
+      z-index: 1;
+      overflow: hidden;
+      position: relative;
+      padding: 8px 50px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1em;
+      letter-spacing: 2px;
+      transition: 0.2s ease;
+      font-weight: bold;
+      margin: 5px 0px;
+      border: 4px solid whitesmoke;
+      color:  whitesmoke;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0%;
+        height: 100%;
+        background: white;
+        z-index: -1;
+        transition: 0.2s ease;
+      }
+      &:hover {
+        color: $main;
+        background:  whitesmoke;
+        transition: 0.2s ease;
+        &:before {
+          width: 100%;
+        }
+      }
+    
+  }
+  @media screen and (max-width:768px) {
+    body {
+      display:block;
+    }
+    .container {
+      margin-top:70px;
+      margin-bottom:70px;
+    }
+    h1,h2,p{
+      text-align: center;
+    }
+   .btn{
+      width: 80%;
+      text-align: center;
+    }
+  } 
+  
+
+  @media screen and (max-width:834px) {
+  
+  .btn{
+      width: 60%;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+$duration: .2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+#navigation-bar {
+    background-color: $navigation-bar-bg-color;
+    padding: 0px;
+    margin-top: 0px;
+    ul.navbar-nav{
+        margin: 0;
+        text-align: center;
+    }
+    a.nav-link {
+
+        color: $navigation-bar-color;
+        font-size: 120%;
+        position: relative;
+        &:hover {
+            color: $navigation-bar-hover-color;
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0; right: 0;
+            height: 2px;
+            background-color: $whitey;
+        }
+        &:before {
+            opacity: 0;
+            transform: translateY(- $distance);
+            transition: transform 0s $easeOutBack, opacity 0s;
+        }
+        &:after {
+            opacity: 0;
+            transform: translateY($distance/2);
+            transition: transform $duration $easeOutBack, opacity $duration;
+        }
+        &:hover, &.active
+        {
+            color: $navigation-bar-hover-color;
+            &:before,
+            &:after {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            &:before {
+                transition: transform $duration $easeOutBack, opacity $duration;
+            }
+            &:after {
+                transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+            }
+        }
+    }
+}
+
+@media (max-width: 834px) {
+    #navigation-bar {
+        a.nav-link {
+            font-size: 100%;
+        }
+    }
+  
+}

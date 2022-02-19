@@ -1,0 +1,14 @@
+- university: Northeastern University
+  degree: MS in Information Systems
+  location: Boston, MA
+  graduation: September 2017 - June 2019
+  gpa: 3.8
+  courses: >
+    Webs Tools, Web Design, Data Structure & Algorithms
+- university: University of Mumbai
+  degree: BE in Computer Engineering
+  location: Mumbai, India
+  graduation: July 2010 - August 2014
+  gpa: 4.0
+  courses: >
+    System and Network Security, Webs Tools, Web Design, Data Structure & Algorithms
