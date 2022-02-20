@@ -130,10 +130,10 @@ $('.navbar-nav a').click(function(){
 $(document).ready(function(){
   $('.portfolio-more-btn button').on('click', function () {
    var text=$('.portfolio-more-btn button').text();
-   if(text === "Show More.."){
-     $(this).html('..Show Less');
+   if(text === "Show More…"){
+     $(this).html('…Show Less');
    } else{
-     $(this).text('Show More..');
+     $(this).text('Show More…');
   }
  });
  });
