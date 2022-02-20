@@ -11,6 +11,7 @@
 - title: Code
   description: My main development languages are Java and JavaScript, but I have worked with Python and more..
   icons:
+    - icon: python
     - icon: java
     - icon: javascript
 
