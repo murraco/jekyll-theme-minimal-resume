@@ -1,6 +1,21 @@
+- title: Software Engineer
+  period: September 2021 - Present
+  company: Apple
+  location: Cupertino, CA, USA
+  description: 
+    - point: Developed and maintained Page Object Model (POM) based automation testing framework utilizing Java, Selenium WebDriver, TestNG, and Maven
+    - point: Efficiently performed smoke, functional, regression, integration and ad-hoc testing
+    - point: Implemented and maintained cloud based Continuous Integration (CI) testing pipeline using Jenkins and various AWS services (EC2, SGs, VPCs, S3, SNS, etc.)  to execute remote jobs
+    - point: Actively participated in all the activities related to Agile development model and  in all phases of Testing Life Cycle, including requirement analysis, test plan generation, test case development and execution, defect analysis, logging and verification.
+    - point: Implement Postman collections to perform API testing and setup Runscope tests for hourly API monitoring smoke tests
+    - point: Lead responsibilities, including training and supervision of junior-level testers and interns
+    - point: Developed a new tool to perform automated web analytics testing, verifying analytics scripts presence as well as tag-value pairs triggered on different user actions reducing manual efforts and increasing to multi domain coverage every release
+    - point: Technologies used - Java, Selenium Webdriver and Grid, TestNG, Maven, AWS, Jenkins, Postman, Runscope, Splunk logs, Git
+
+
 - title: Automation Developer
-  period: September 2019 - Present
-  company: Roundarch Isobar Inc.
+  period: September 2019 - September 2021
+  company: Roundarch Isobar Inc/<br>Dentsu International
   location: Boston, MA, USA
   description: 
     - point: Developed and maintained Page Object Model (POM) based automation testing framework utilizing Java, Selenium WebDriver, TestNG, and Maven
