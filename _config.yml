@@ -1,8 +1,8 @@
 # Site settings
 title: Gergely Máthé
-description: Jekyll Theme Minimal Resume
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+description: Gergely Máthé's personal website
+baseurl: "https://gergelymathe.github.io" # the subpath of your site, e.g. /blog
+url: "https://gergelymathe.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Gergely Máthé
