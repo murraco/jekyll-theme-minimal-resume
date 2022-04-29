@@ -1,0 +1,21 @@
+{
+  "name": "jekyll-theme-minimal-resume",
+  "version": "1.0.0",
+  "description": "This is a simple Jekyll theme for a minimal resume website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mauricio Urraco <mauriurraco@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
