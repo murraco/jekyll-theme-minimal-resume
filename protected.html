@@ -30,7 +30,7 @@
         .staticrypt-form {
             position: relative;
             z-index: 1;
-            background: #ffffff;
+            background: #FFFFFF;
             max-width: 360px;
             margin: 0 auto 100px;
             padding: 45px;
@@ -50,19 +50,34 @@
         }
 
         .staticrypt-form .staticrypt-decrypt-button {
-            text-transform: uppercase;
-            outline: 0;
-            background: #4CAF50;
-            width: 100%;
-            border: 0;
-            padding: 15px;
-            color: #FFFFFF;
-            font-size: 14px;
-            cursor: pointer;
+            width: 25%;
+            margin: 1em auto;
+            color: #1a222c;
+            border-color: #1a222c;
+            background: white;
+            font-size: 1em;
+            padding: 1em;
+            text-transform: capitalize;
+            border: 2px solid;
+            display: block;
+            text-align: center;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            border-radius: 15px;
+            -webkit-transition: background-color 0.5s ease-in-out, 0.5s;
+            -moz-transition: background-color 0.5s ease-in-out, 0.5s;
+            -o-transition: background-color 0.5s ease-in-out, 0.5s;
+            transition: background-color 0.5s ease-in-out, 0.5s;
+            text-decoration: none;
+
         }
 
-        .staticrypt-form .staticrypt-decrypt-button:hover, .staticrypt-form .staticrypt-decrypt-button:active, .staticrypt-form .staticrypt-decrypt-button:focus {
-            background: #43A047;
+        .staticrypt-form .staticrypt-decrypt-button:hover, .staticrypt-form .staticrypt-decrypt-button:active, .staticrypt-form .staticrypt-decrypt-button:focus, .staticrypt-decrypt-button:hover {
+            background: #1a222c;
+            color: white;
+            border-color: #1a222c;
         }
 
         .staticrypt-html {
@@ -71,6 +86,11 @@
 
         .staticrypt-body {
             margin-bottom: 1em;
+            background: #1a222c; /* fallback for old browsers */
+            background: -webkit-linear-gradient(right, #1a222c, #1a222c);
+            background: -moz-linear-gradient(right, #1a222c, #1a222c);
+            background: -o-linear-gradient(right, #1a222c, #1a222c);
+            background: linear-gradient(to left, #1a222c, #1a222c);
             font-family: "Arial", sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -124,424 +144,41 @@
 </head>
 
 <body class="staticrypt-body">
-    <div id="particles-js">
-        <main  class="encrypted">
-          <div class="container">
-            <div class="staticrypt-page">
-                <div class="staticrypt-form">
-                    <div class="staticrypt-instructions">
-                        <p class="staticrypt-title">{title}</p>
-                        <p>{instructions}</p>
-                    </div>
-            
-                    <hr class="staticrypt-hr">
-            
-                    <form id="staticrypt-form" action="#" method="post">
-                        <input id="staticrypt-password"
-                               type="password"
-                               name="password"
-                               placeholder="{passphrase_placeholder}"
-                               autofocus/>
-            
-                        <label id="staticrypt-remember-label" class="staticrypt-remember hidden">
-                            <input id="staticrypt-remember"
-                                   type="checkbox"
-                                   name="remember"/>
-                            {remember_me}
-                        </label>
-            
-                        <input type="submit" class="staticrypt-decrypt-button" value="{decrypt_button}"/>
-                    </form>
-                </div>
-            </div>
-          </div>
-        </main>
-      </div>
+<div class="staticrypt-page">
+    <div class="staticrypt-form">
+        <div class="staticrypt-instructions">
+            <p class="staticrypt-title">{title}</p>
+            <p>{instructions}</p>
+        </div>
 
+        <hr class="staticrypt-hr">
+
+        <form id="staticrypt-form" action="#" method="post">
+            <input id="staticrypt-password"
+                   type="password"
+                   name="password"
+                   placeholder="{passphrase_placeholder}"
+                   autofocus/>
+
+            <label id="staticrypt-remember-label" class="staticrypt-remember hidden">
+                <input id="staticrypt-remember"
+                       type="checkbox"
+                       name="remember"/>
+                {remember_me}
+            </label>
+
+            <input type="submit" class="staticrypt-decrypt-button" value="{decrypt_button}"/>
+        </form>
+    </div>
+
+</div>
 <footer class="staticrypt-footer">
     <p class="pull-right">Created with <a href="https://robinmoisson.github.io/staticrypt">StatiCrypt</a></p>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-        <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-        <script>/**
-            * Add sweetScroll onload 
-            * Add particleJS on load
-            **/ 
-           
-           document.addEventListener("DOMContentLoaded", function () {
-               const sweetScroll = new SweetScroll({/* some options */});
-             
-               /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-               particlesJS('particles-js', {
-                 "particles": {
-                   "number": {
-                     "value": 260,
-                     "density": {
-                       "enable": true,
-                       "value_area": 500
-                     }
-                   },
-                   "color": {
-                     "value": "#ffffff"
-                   },
-                   "shape": {
-                     "type": "circle",
-                     "stroke": {
-                       "width": 0,
-                       "color": "#000000"
-                     },
-                     "polygon": {
-                       "nb_sides": 5
-                     },
-                     "image": {
-                       "src": "img/github.svg",
-                       "width": 100,
-                       "height": 100
-                     }
-                   },
-                   "opacity": {
-                     "value": 1,
-                     "random": true,
-                     "anim": {
-                       "enable": true,
-                       "speed": 1,
-                       "opacity_min": 0,
-                       "sync": false
-                     }
-                   },
-                   "size": {
-                     "value": 3,
-                     "random": true,
-                     "anim": {
-                       "enable": true,
-                       "speed": 4,
-                       "size_min": 0.3,
-                       "sync": false
-                     }
-                   },
-                   "line_linked": {
-                     "enable": false,
-                     "distance": 150,
-                     "color": "#ffffff",
-                     "opacity": 0.4,
-                     "width": 1
-                   },
-                   "move": {
-                     "enable": true,
-                     "speed": 1,
-                     "direction": "none",
-                     "random": true,
-                     "straight": false,
-                     "out_mode": "out",
-                     "bounce": false,
-                     "attract": {
-                       "enable": false,
-                       "rotateX": 600,
-                       "rotateY": 600
-                     }
-                   }
-                 },
-                 "interactivity": {
-                   "detect_on": "canvas",
-                   "events": {
-                     "onhover": {
-                       "enable": false,
-                       "mode": "grab"
-                     },
-                     "onclick": {
-                       "enable": true,
-                       "mode": "repulse"
-                     },
-                     "resize": true
-                   },
-                   "modes": {
-                     "grab": {
-                       "distance": 200,
-                       "line_linked": {
-                         "opacity": 0.4
-                       }
-                     },
-                     "bubble": {
-                       "distance": 250,
-                       "size": 0,
-                       "duration": 2,
-                       "opacity": 0,
-                       "speed": 3
-                     },
-                     "repulse": {
-                       "distance": 200,
-                       "duration": 0.4
-                     },
-                     "push": {
-                       "particles_nb": 10
-                     },
-                     "remove": {
-                       "particles_nb": 2
-                     }
-                   }
-                 },
-                 "retina_detect": true
-               });
-             
-             }, false);
-             
-           
-           // Mobile view - Collapse navbar after clicking a link
-           $('.navbar-nav a').click(function(){
-               $(".navbar-collapse").collapse('hide');
-           });
-           
-           // Toggle Show More button text on portfolio page
-           $(document).ready(function(){
-             $('.portfolio-more-btn button').on('click', function () {
-              var text=$('.portfolio-more-btn button').text();
-              if(text === "Show More…"){
-                $(this).html('…Show Less');
-              } else{
-                $(this).text('Show More…');
-             }
-            });
-            });
-           
-            // Initialization AOS
-            AOS.init();
-           
-            // Particle JS color toggle click event
-           
-            var checkbox = document.querySelector("input[id=customSwitch1]");
-           
-            checkbox.addEventListener('change', function() {
-              if (this.checked) {
-                console.log("Checkbox is checked..");
-                console.log("Colors dots");
-                particlesJS('particles-js', {
-                 "particles": {
-                   "number": {
-                     "value": 260,
-                     "density": {
-                       "enable": true,
-                       "value_area": 500
-                     }
-                   },
-                   "color": {
-                     "value": ["#BD10E0","#B8E986","#50E3C2","#FFD300","#E86363"]
-                   },
-                   "shape": {
-                     "type": "circle",
-                     "stroke": {
-                       "width": 0,
-                       "color": "#000000"
-                     },
-                     "polygon": {
-                       "nb_sides": 5
-                     },
-                     "image": {
-                       "src": "img/github.svg",
-                       "width": 100,
-                       "height": 100
-                     }
-                   },
-                   "opacity": {
-                     "value": 1,
-                     "random": true,
-                     "anim": {
-                       "enable": true,
-                       "speed": 1,
-                       "opacity_min": 0,
-                       "sync": false
-                     }
-                   },
-                   "size": {
-                     "value": 3,
-                     "random": true,
-                     "anim": {
-                       "enable": true,
-                       "speed": 4,
-                       "size_min": 0.3,
-                       "sync": false
-                     }
-                   },
-                   "line_linked": {
-                     "enable": false,
-                     "distance": 150,
-                     "color": "#ffffff",
-                     "opacity": 0.4,
-                     "width": 1
-                   },
-                   "move": {
-                     "enable": true,
-                     "speed": 1,
-                     "direction": "none",
-                     "random": true,
-                     "straight": false,
-                     "out_mode": "out",
-                     "bounce": false,
-                     "attract": {
-                       "enable": false,
-                       "rotateX": 600,
-                       "rotateY": 600
-                     }
-                   }
-                 },
-                 "interactivity": {
-                   "detect_on": "canvas",
-                   "events": {
-                     "onhover": {
-                       "enable": false,
-                       "mode": "grab"
-                     },
-                     "onclick": {
-                       "enable": true,
-                       "mode": "repulse"
-                     },
-                     "resize": true
-                   },
-                   "modes": {
-                     "grab": {
-                       "distance": 200,
-                       "line_linked": {
-                         "opacity": 0.4
-                       }
-                     },
-                     "bubble": {
-                       "distance": 250,
-                       "size": 0,
-                       "duration": 2,
-                       "opacity": 0,
-                       "speed": 3
-                     },
-                     "repulse": {
-                       "distance": 200,
-                       "duration": 0.4
-                     },
-                     "push": {
-                       "particles_nb": 10
-                     },
-                     "remove": {
-                       "particles_nb": 2
-                     }
-                   }
-                 },
-                 "retina_detect": true
-               });
-              } else {
-               console.log("Checkbox is not checked..");
-               console.log("White dots only");
-               particlesJS('particles-js', {
-                "particles": {
-                  "number": {
-                    "value": 260,
-                    "density": {
-                      "enable": true,
-                      "value_area": 500
-                    }
-                  },
-                  "color": {
-                    "value": "#ffffff"
-                  },
-                  "shape": {
-                    "type": "circle",
-                    "stroke": {
-                      "width": 0,
-                      "color": "#000000"
-                    },
-                    "polygon": {
-                      "nb_sides": 5
-                    },
-                    "image": {
-                      "src": "img/github.svg",
-                      "width": 100,
-                      "height": 100
-                    }
-                  },
-                  "opacity": {
-                    "value": 1,
-                    "random": true,
-                    "anim": {
-                      "enable": true,
-                      "speed": 1,
-                      "opacity_min": 0,
-                      "sync": false
-                    }
-                  },
-                  "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                      "enable": true,
-                      "speed": 4,
-                      "size_min": 0.3,
-                      "sync": false
-                    }
-                  },
-                  "line_linked": {
-                    "enable": false,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
-                    "width": 1
-                  },
-                  "move": {
-                    "enable": true,
-                    "speed": 1,
-                    "direction": "none",
-                    "random": true,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                      "enable": false,
-                      "rotateX": 600,
-                      "rotateY": 600
-                    }
-                  }
-                },
-                "interactivity": {
-                  "detect_on": "canvas",
-                  "events": {
-                    "onhover": {
-                      "enable": false,
-                      "mode": "grab"
-                    },
-                    "onclick": {
-                      "enable": true,
-                      "mode": "repulse"
-                    },
-                    "resize": true
-                  },
-                  "modes": {
-                    "grab": {
-                      "distance": 200,
-                      "line_linked": {
-                        "opacity": 0.4
-                      }
-                    },
-                    "bubble": {
-                      "distance": 250,
-                      "size": 0,
-                      "duration": 2,
-                      "opacity": 0,
-                      "speed": 3
-                    },
-                    "repulse": {
-                      "distance": 200,
-                      "duration": 0.4
-                    },
-                    "push": {
-                      "particles_nb": 10
-                    },
-                    "remove": {
-                      "particles_nb": 2
-                    }
-                  }
-                },
-                "retina_detect": true
-              });
-              }
-            });
-        </script> 
+
+
+{crypto_tag}
+
 <script>
     // variables to be filled when generating the file
     var encryptedMsg = '{encrypted}',
