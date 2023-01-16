@@ -15,12 +15,6 @@ github_username:  p_bielefeldt
 linkedin_username: pbielefeldt
 # gplus_username:  lorem_ipsum
 
-# Google-analytics
-#google-analytics:
-#  id: ""
-
-exclude: ['package.json', 'src' , 'node_modules']
-
-#exclude: ['package.json', 'src' , 'node_modules', 'vendor']
+exclude: ['package.json', 'src', 'node_modules', 'vendor']
 # cf https://github.com/jekyll/jekyll/issues/5267#issuecomment-241379902
 
