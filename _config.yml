@@ -18,4 +18,3 @@ mastodon_handle: digitalcourage.social/@derfopps
 
 exclude: ['package.json', 'src', 'node_modules', 'vendor']
 # cf https://github.com/jekyll/jekyll/issues/5267#issuecomment-241379902
-
