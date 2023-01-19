@@ -20,6 +20,11 @@
         {% if site.linkedin_username %}
         <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
         {% endif %}
+        {% if site.mastodon_handle %}
+        <!-- todo: find appropriate logo -->
+        <!-- note: the rel=me is for link back, see htps://docs.joinmastodon.org/user/profile/#verification -->
+        <a aria-label="Fediverse" target="_blank" href="https://{{site.mastodon_handle}}" rel="me"><i class="icon fa fa-users" aria-hidden="true"></i></a>
+        {% endif %}
         {% if site.github_username %}
         <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
         {% endif %}

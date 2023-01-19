@@ -13,6 +13,7 @@ email: philipp@bielefeldt.online
 twitter_username: p_bielefeldt
 github_username:  p_bielefeldt
 linkedin_username: pbielefeldt
+mastodon_handle: digitalcourage.social/@derfopps
 # gplus_username:  lorem_ipsum
 
 exclude: ['package.json', 'src', 'node_modules', 'vendor']
