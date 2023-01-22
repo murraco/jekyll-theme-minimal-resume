@@ -17,6 +17,11 @@
         {% if site.facebook_username %}
         <a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
         {% endif %}
+        {% if site.fediverse_instance %}
+        <!-- todo: find appropriate logo -->
+        <!-- note: the rel=me is for link back, see htps://docs.joinmastodon.org/user/profile/#verification -->
+        <a aria-label="Fediverse" target="_blank" href="https://{{ site.fediverse_instance }}/{{ site.fediverse_username }}" rel="me"><i class="icon fa fa-users" aria-hidden="true"></i></a>
+        {% endif %}
         {% if site.linkedin_username %}
         <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
         {% endif %}
