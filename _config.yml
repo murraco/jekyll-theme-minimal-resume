@@ -17,4 +17,5 @@ github_username:  e-liouta
 # medium_url: lorem_ipsum.medium.com
 # gplus_username:  lorem_ipsum
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ['package.json', 'src', 'node_modules', 'vendor']
+
