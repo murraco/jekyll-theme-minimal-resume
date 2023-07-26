@@ -1,15 +1,15 @@
 # Site settings
-title: exolocity
-description: exolocity
+title: Rob | Resume
+description: Rob K Resume (Check LinkedIn for latest info) 
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: exolocity
-user_description: Hi, I'm Rob a consultant from Perth, Australia. I'm always searching for the next challenge; no task is too scary nor too difficult. Lately I have been immersed in world of Crypto, mainly derivatives and NFTs!
-user_title: B. Comm (Finance & Accounting)
-email: rob@exolo.city
-twitter_username: robkoteski
+username: Rob K
+user_description: Hi, I'm Rob from Perth, Australia. I'm always searching for another challenge or just something new to learn. Currently anything Accounting, Finance, Financial Derivatives, & Home Lab/AI is my passion. Always learn to self host and automate everything; from Media, CCTV, and even Grocery lists... the list goes on. AI
+user_title: Bachelor of Commerce: Finance & Accounting (from UWA)
+email: CtrlAltRob@pm.me
+#twitter_username: robkoteski
 # instagram_username: 
 # facebook_username: mauricio.urraco
 linkedin_username: robert-koteski
