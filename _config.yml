@@ -18,5 +18,4 @@ github_username:  exolocity
 # medium_url: lorem_ipsum.medium.com
 # gplus_username:  lorem_ipsum
 
-exclude: ['package.json', 'src', 'node_modules', 'vendor']
-
+exclude: ['package.json', 'src' , 'node_modules']
