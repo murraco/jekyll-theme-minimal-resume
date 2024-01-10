@@ -9,7 +9,7 @@
   "author": "Mauricio Urraco <mauriurraco@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "browser-sync": "^2.29.1",
+    "browser-sync": "^3.0.2",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
