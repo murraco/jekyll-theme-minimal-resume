@@ -1,11 +1,11 @@
 # Site settings
-title: Mauricio Urraco
-description: Jekyll Theme Minimal Resume
+title: Petar Sugarev
+description: Minimal Resume
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Mauricio Urraco
+username: Petar Sugarev
 user_description: I'm a Software Engineer from Argentina, always searching for the next challenge; no task is too scary nor too difficult. Lately I have been immersed in world of Giving Circles working with Grapevine, a California based startup trying to improve the world through collaborative giving. I'm the first engineer they hired to work on the platform.
 user_title: Software Engineer
 email: mauriurraco@gmail.com
