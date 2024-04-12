@@ -17,7 +17,7 @@ Live demo at https://jekyll-theme-minimal-resume.netlify.com/
 
 ***
 
-<h3 align="center">Please help this repo with a ⭐ if you find it useful! :blush:</h3>
+<h3 align="center">Please help this repo with a ⭐ or <a href='https://github.com/sponsors/murraco'>Sponsor Me</a> if you find it useful! :blush:</h3>
 
 ***
 
