@@ -1,8 +1,9 @@
+const { src, dest, parallel, series, watch } = require('gulp');
 var gulp = require('gulp');
 var csso = require('gulp-csso');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var plumber = require('gulp-plumber');
 var cp = require('child_process');
 var imagemin = require('gulp-imagemin');
@@ -21,68 +22,75 @@ gulp.task('jekyll-build', function (done) {
 /*
  * Rebuild Jekyll & reload browserSync
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-	browserSync.reload();
-});
+function browserReload () {
+    return browserSync.reload;
+}
 
 /*
  * Build the jekyll site and launch browser-sync
  */
-gulp.task('browser-sync', ['jekyll-build'], function() {
-	browserSync({
+function browserSync () {
+	return browserSync({
 		server: {
 			baseDir: '_site'
 		}
 	});
-});
+}
 
 /*
 * Compile and minify sass
 */
-gulp.task('sass', function() {
-  	gulp.src('src/styles/**/*.scss')
-		.pipe(plumber())
-		.pipe(sass())
-		.pipe(csso())
-		.pipe(gulp.dest('assets/css/'));
-});
+function css() {
+	return src('src/styles/**/*.scss')
+	.pipe(plumber())
+	.pipe(sass())
+	.pipe(csso())
+	.pipe(gulp.dest('assets/css/'));
+}
 
 /*
 * Compile fonts
 */
-gulp.task('fonts', function() {
-	gulp.src('src/fonts/**/*.{ttf,woff,woff2}')
-		.pipe(plumber())
-		.pipe(gulp.dest('assets/fonts/'));
-})
+function fonts() {
+	return src('src/fonts/**/*.{ttf,woff,woff2}')
+	.pipe(plumber())
+	.pipe(gulp.dest('assets/fonts/'));
+}
 
 /*
  * Minify images
  */
-gulp.task('imagemin', function() {
-	return gulp.src('src/img/**/*.{jpg,png,gif}')
-		.pipe(plumber())
-		.pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-		.pipe(gulp.dest('assets/img/'));
-});
-
+function imagemin() {
+	return src('src/img/**/*.{jpg,png,gif}')
+	.pipe(plumber())
+	.pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+	.pipe(gulp.dest('assets/img/'));
+}
 /**
  * Compile and minify js
  */
-gulp.task('js', function(){
-	return gulp.src('src/js/**/*.js')
-		.pipe(plumber())
-		.pipe(concat('main.js'))
-		.pipe(uglify())
-		.pipe(gulp.dest('assets/js/'))
-});
+function js() {
+	return src('src/js/**/*.js')
+	.pipe(plumber())
+	.pipe(concat('main.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('assets/js/'))
+}
 
-gulp.task('watch', function() {
-	gulp.watch('src/styles/**/*.scss', ['sass', 'jekyll-rebuild']);
-	gulp.watch('src/js/**/*.js', ['js']);
-	gulp.watch('src/fonts/**/*.{tff,woff,woff2}', ['fonts']);
-	gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
-	gulp.watch(['*html', '_includes/*html', '_layouts/*.html'], ['jekyll-rebuild']);
-});
+function watchFiles() {
+    watch('src/styles/**/*.scss', parallel(css))
+    .on('change', browserReload());
+    watch('src/js/**/*.js', parallel(js))
+    watch('src/fonts/**/*.{tff,woff,woff2}', parallel(fonts))
+	watch('src/img/**/*.{jpg,png,gif}', parallel(imagemin))
+    watch(['*html', '_includes/*html', '_layouts/*.html'])
+    .on('change', browserReload());
+}
 
-gulp.task('default', ['js', 'sass', 'fonts', 'browser-sync', 'watch']);
+exports.js = js;
+exports.fonts = fonts;
+exports.css = css;
+exports.imagemin = imagemin;
+
+exports.default = parallel(js,css,fonts,imagemin);
+exports.watch = parallel(watchFiles, browserSync);
