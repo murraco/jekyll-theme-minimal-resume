@@ -1,19 +1,20 @@
 # Site settings
-title: Mauricio Urraco
+title: NathanLYJ
 description: Jekyll Theme Minimal Resume
 # baseurl: "" # the subpath of your site, e.g. /blog
 http://nathanLYJ.github.io
 
 # User settings
-username: Mauricio Urraco
-user_description: I'm a Software Engineer from Argentina, always searching for the next challenge; no task is too scary nor too difficult. Lately I have been immersed in world of Giving Circles working with Grapevine, a California based startup trying to improve the world through collaborative giving. I'm the first engineer they hired to work on the platform.
+username: nathanLYJ
+user_description: Hello! I'm a junior software engineer from Korea who thrives on tackling new challenges. Lately, I've embarked on a journey with Python, leveraging this robust language to broaden my skill set.
+I'm committed to discovering more effective problem-solving approaches and am dedicated to ongoing personal and professional growth. I'm enthusiastic about exploring projects or innovative ideas that offer valuable learning opportunities. Please don't hesitate to get in touch anytime!
 user_title: Software Engineer
-email: mauriurraco@gmail.com
+email: nathanylj@gmail.com
 # twitter_username: lorem_ipsum
-instagram_username: mauriciourraco7
-facebook_username: mauricio.urraco
-linkedin_username: murraco
-github_username:  murraco
+instagram_username: weongilyu
+facebook_username: nathanlyj
+# linkedin_username: murraco
+github_username:  nathanLYJ
 # medium_username: lorem_ipsum
 # medium_url: lorem_ipsum.medium.com
 # gplus_username:  lorem_ipsum
