@@ -1,8 +1,9 @@
 # Site settings
 title: NathanLYJ
-description: Jekyll Theme Minimal Resume
+description: my first blog
 # baseurl: "" # the subpath of your site, e.g. /blog
-http://nathanLYJ.github.io
+url: "http://nathanLYJ.github.io"
+
 
 # User settings
 username: nathanLYJ
