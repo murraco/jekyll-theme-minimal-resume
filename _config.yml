@@ -20,3 +20,4 @@ github_username:  murraco
 
 exclude: ['package.json', 'src', 'node_modules', 'vendor']
 
+remote_theme: jekyll-theme-minimal-resume_config.ymljekyll-theme-minimal-resumetheme: jekyll-theme-minimal-resume
