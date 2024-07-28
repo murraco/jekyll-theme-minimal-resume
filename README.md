@@ -91,3 +91,7 @@ In order to compile the assets and run `Jekyll` locally you need to follow those
 # Credits
 
 - [Nathan Randecker](https://github.com/nrandecker)
+
+# Buy me a coffee to show your support!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/murraco)
