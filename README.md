@@ -21,6 +21,10 @@ Live demo at https://jekyll-theme-minimal-resume.netlify.app
   <img src="https://github.com/murraco/jekyll-theme-minimal-resume/blob/master/screenshot.png" width="90%" />
 </p>
 
+# If this helped, consider buying me a coffee! ☕️
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/murraco)
+
 # Quick Setup
 
 1. Install Jekyll: `gem install jekyll bundler`
