@@ -1,0 +1,10 @@
+.git
+.github
+_site
+node_modules
+vendor
+.bundle
+*.log
+.DS_Store
+.env
+.env.*

@@ -1,0 +1,5 @@
+services:
+  site:
+    build: .
+    ports:
+      - "4000:4000"

@@ -130,6 +130,10 @@
       fill: #fff;
       -webkit-animation: pulse 1.3s infinite;
       animation: pulse 1.3s infinite;
+      @media (prefers-reduced-motion: reduce) {
+        -webkit-animation: none;
+        animation: none;
+      }
       &:hover {
         color: $sec;
       }

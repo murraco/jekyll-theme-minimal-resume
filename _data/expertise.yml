@@ -1,0 +1,34 @@
+# Expertise section below the hero (icons use Devicon classes bundled in main.css).
+intro_title: What I Do
+
+sections:
+  - title: Backend & APIs
+    body: >-
+      Python, Django, Java, Spring Boot, Node.js. I build robust APIs,
+      authentication systems, and data pipelines backed by PostgreSQL,
+      MongoDB, and Redis.
+    icons:
+      - devicon-python-plain colored
+      - devicon-django-plain colored
+      - devicon-java-plain colored
+      - devicon-nodejs-plain colored
+
+  - title: Frontend & UI
+    body: >-
+      TypeScript, Angular, React, Vue.js. I build responsive,
+      component-driven interfaces from design to production.
+    icons:
+      - devicon-typescript-plain colored
+      - devicon-angularjs-plain colored
+      - devicon-react-original colored
+      - devicon-vuejs-plain colored
+
+  - title: DevOps & Tooling
+    body: >-
+      Docker, Git, Linux, CI/CD. I ship reliable software with
+      automated builds, containerized environments, and clean workflows.
+    icons:
+      - devicon-docker-plain colored
+      - devicon-git-plain colored
+      - devicon-linux-plain colored
+      - devicon-postgresql-plain colored

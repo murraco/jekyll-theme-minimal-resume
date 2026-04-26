@@ -1,9 +1,14 @@
 /* sweetScroll load */
 document.addEventListener("DOMContentLoaded", function () {
-  const sweetScroll = new SweetScroll({/* some options */});
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-  particlesJS('particles-js', {
+  if (!reduceMotion) {
+    new SweetScroll({/* some options */});
+  }
+
+  if (!reduceMotion) {
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS('particles-js', {
     "particles": {
       "number": {
         "value": 160,
@@ -113,5 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     "retina_detect": true
   });
+  }
 
 }, false);

@@ -1,0 +1,14 @@
+# Bind-mount the repo for development; see README (Docker section).
+# docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build
+
+services:
+  site:
+    volumes:
+      - .:/srv/jekyll
+      - jekyll_bundle:/usr/local/bundle
+      - jekyll_node_modules:/srv/jekyll/node_modules
+    command: ["/bin/sh", "/srv/jekyll/docker/entrypoint-dev.sh"]
+
+volumes:
+  jekyll_bundle:
+  jekyll_node_modules:

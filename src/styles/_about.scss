@@ -11,6 +11,21 @@
     width: 60px !important;
     height: auto;
   }
+
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.35em;
+    margin: 0.25em 0 0.5em;
+    font-size: 1em;
+
+    i {
+      font-size: 1em;
+      line-height: 1;
+    }
+  }
 }
 
 .tech {

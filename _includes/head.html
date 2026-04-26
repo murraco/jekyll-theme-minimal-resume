@@ -1,11 +1,52 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  {% assign page_title = page.title | default: site.title %}
+  {% assign page_desc = page.description | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+  {% assign canonical = page.url | absolute_url %}
+  {% assign og_image_rel = site.social_image | default: '/assets/favicon.png' %}
+  {% assign og_image = og_image_rel | absolute_url %}
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{{ page_desc }}">
+
+  <link rel="canonical" href="{{ canonical }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_desc }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:locale" content="{{ site.og_locale | default: 'en_US' }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_desc }}">
+  <meta name="twitter:image" content="{{ og_image }}">
+  {% if site.twitter_username %}
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+  {% endif %}
+
+  {% if site.theme_color %}
+  <meta name="theme-color" content="{{ site.theme_color }}">
+  {% endif %}
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
-  <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" >
+  <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | prepend: site.baseurl }}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": {{ site.username | jsonify }},
+    "jobTitle": {{ site.user_title | jsonify }}{% if site.email %},
+    "email": {{ site.email | jsonify }}{% endif %}{% if site.url %},
+    "url": {{ "/" | absolute_url | jsonify }}{% endif %}{% if site.github_username or site.linkedin_username %},
+    "sameAs": [
+      {% if site.github_username %}{{ "https://github.com/" | append: site.github_username | jsonify }}{% endif %}{% if site.github_username and site.linkedin_username %},{% endif %}
+      {% if site.linkedin_username %}{{ "https://www.linkedin.com/in/" | append: site.linkedin_username | jsonify }}{% endif %}
+    ]{% endif %}
+  }
+  </script>
 </head>
