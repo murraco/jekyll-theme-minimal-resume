@@ -1,7 +1,19 @@
 <footer class="footer">
-    <!-- <p>&copy; {{ site.username }}</p> -->
-    <p>Built with Jekyll and <span class="love">❤</span> by <a href="https://github.com/murraco">Mauricio Urraco</a></p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">HL</span>
+      <div>
+        <p class="footer-name">{{ site.username }}</p>
+        <p class="footer-sub">{{ site.user_title }}</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:{{ site.owner.email }}" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      <a href="https://github.com/{{ site.owner.github }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/{{ site.owner.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="{{ site.owner.website }}" target="_blank" rel="noopener" aria-label="Lab"><i class="fa-solid fa-flask"></i></a>
+    </div>
+    <p class="footer-copy">© {{ 'now' | date: "%Y" }} {{ site.username }}. Crafted with care.</p>
+  </div>
 </footer>
-<script src="{{ '/assets/js/particles.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>

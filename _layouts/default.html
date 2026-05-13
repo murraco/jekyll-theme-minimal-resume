@@ -1,98 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  
   {% include head.html %}
-
   <body>
-      
-      {% include header.html %}
+    {% include header.html %}
 
-      <!-- ABOUT (My Expertise) 섹션 -->
-      <div class="section" id="about">
+    <main>
+      <section class="section" id="about">
         <div class="container">
           {% include about.html %}
         </div>
-      </div>
-      
-      <!-- EXPERIENCE 섹션 -->
-      <div class="section" id="experience">
+      </section>
+
+      <section class="section section-alt" id="experience">
         <div class="container">
-          <div class="section-title">
-            <h2>Experience</h2>
+          <div class="section-head">
+            <span class="section-kicker">// 01</span>
+            <h2 class="section-title">Experience</h2>
           </div>
-          <div class="experience-list">
+          <div class="timeline">
             {% for exp in site.data.experience %}
-            <div class="experience-item">
-              <div class="item-header">
-                <h3>{{ exp.position }}</h3>
-                <span class="duration">{{ exp.duration }}</span>
+            <article class="tl-item">
+              <div class="tl-marker"></div>
+              <div class="tl-card">
+                <div class="tl-head">
+                  <h3>{{ exp.position }}</h3>
+                  <span class="chip">{{ exp.duration }}</span>
+                </div>
+                <h4><a href="{{ exp.url }}" target="_blank" rel="noopener noreferrer">{{ exp.company }} <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h4>
+                <p>{{ exp.summary }}</p>
               </div>
-              <h4><a href="{{ exp.url }}" target="_blank" rel="noopener noreferrer">{{ exp.company }}</a></h4>
-              <p>{{ exp.summary }}</p>
-            </div>
+            </article>
             {% endfor %}
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- EDUCATION 섹션 -->
-      <div class="section" id="education">
+      <section class="section" id="education">
         <div class="container">
-          <div class="section-title">
-            <h2>Education</h2>
+          <div class="section-head">
+            <span class="section-kicker">// 02</span>
+            <h2 class="section-title">Education</h2>
           </div>
-          <div class="education-list">
+          <div class="cards">
             {% for edu in site.data.education %}
-            <div class="education-item">
-              <div class="item-header">
-                <h3>{{ edu.degree }}</h3>
-                <span class="duration">{{ edu.duration }}</span>
+            <article class="card">
+              <div class="card-top">
+                <i class="fa-solid fa-graduation-cap card-icon"></i>
+                <span class="chip">{{ edu.duration }}</span>
               </div>
+              <h3>{{ edu.degree }}</h3>
               <h4>{{ edu.university }}</h4>
               <p>{{ edu.summary }}</p>
-            </div>
+            </article>
             {% endfor %}
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- PUBLICATIONS 섹션 -->
-      <div class="section" id="publications">
+      <section class="section section-alt" id="publications">
         <div class="container">
-          <div class="section-title">
-            <h2>Publications</h2>
+          <div class="section-head">
+            <span class="section-kicker">// 03</span>
+            <h2 class="section-title">Publications</h2>
           </div>
-          <div class="publication-list">
+          <div class="pub-list">
             {% for pub in site.data.publications %}
-            <div class="publication-item">
-              <h4><a href="{{ pub.url | default: '#' }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a></h4>
-              <p class="authors"><strong>Authors:</strong> {{ pub.authors }}</p>
-              <p class="conference"><i>{{ pub.conference }}</i></p>
-            </div>
+            <a href="{{ pub.url | default: '#' }}" target="_blank" rel="noopener noreferrer" class="pub-item">
+              <span class="pub-index">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+              <div class="pub-body">
+                <h3 class="pub-title">{{ pub.title }}</h3>
+                <p class="pub-authors">{{ pub.authors }}</p>
+                <p class="pub-venue"><i class="fa-solid fa-book-open"></i> {{ pub.conference }}</p>
+              </div>
+              <span class="pub-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
             {% endfor %}
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- HONORS & AWARDS 섹션 -->
-      <div class="section" id="honors">
+      <section class="section" id="honors">
         <div class="container">
-          <div class="section-title">
-            <h2>Honors & Awards</h2>
+          <div class="section-head">
+            <span class="section-kicker">// 04</span>
+            <h2 class="section-title">Honors &amp; Awards</h2>
           </div>
-          <ul class="honor-list">
+          <div class="honors-grid">
             {% for honor in site.data.honors %}
-            <li>
-              <strong>{{ honor.award }}</strong> - <i>{{ honor.organizer }}</i> ({{ honor.date }})
-            </li>
+            <article class="honor-card">
+              <div class="honor-icon"><i class="fa-solid fa-trophy"></i></div>
+              <h3>{{ honor.award }}</h3>
+              <p class="honor-org">{{ honor.organizer }}</p>
+              <span class="honor-date">{{ honor.date }}</span>
+            </article>
             {% endfor %}
-          </ul>
+          </div>
         </div>
-      </div>
-      
+      </section>
+
       {{ content }}
+    </main>
 
-      {% include footer.html %}
-
+    {% include footer.html %}
   </body>
 </html>

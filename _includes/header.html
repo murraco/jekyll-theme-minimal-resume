@@ -1,37 +1,45 @@
-<div id="particles-js">
-  <div class="header">
-      <h1>
-        <span class="site-title">{{ site.username }}</span>
-        <span class="site-description">{{ site.user_title }}</span>
-      </h1>
-      <div class="header-icons">
-        {% if site.email %}
-        <a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>
-        {% endif %}
-        {% if site.twitter_username %}
-        <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-        {% endif %}
-        {% if site.instagram_username %}
-        <a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{ site.instagram_username }}"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
-        {% endif %}
-        {% if site.facebook_username %}
-        <a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
-        {% endif %}
-        {% if site.linkedin_username %}
-        <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
-        {% endif %}
-        {% if site.github_username %}
-        <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-        {% endif %}
-        {% if site.medium_username %}
-        <a aria-label="My Medium" target="_blank" href="https://medium.com/{{ site.medium_username }}"><i class="icon fa fa-medium" aria-hidden="true"></i></a>
-        {% elsif site.medium_url %}
-        <a aria-label="My Medium" target="_blank" href="https://{{ site.medium_url }}"><i class="icon fa fa-medium" aria-hidden="true"></i></a>
-        {% endif %}
-      </div>
-      <div class="header-links">
-        <!-- <a class="link" href="#about" data-scroll>About Me</a> -->
-      </div>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <span class="brand-mark">HL</span>
+      <span class="brand-text">Habin Lim</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#honors">Honors</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
-  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
-</div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow"><span class="dot"></span> Available for research collaboration</p>
+    <h1 class="hero-title">
+      <span class="line">Hi, I&rsquo;m <span class="grad-text">{{ site.username }}</span>.</span>
+      <span class="line subtitle">{{ site.user_title }}</span>
+    </h1>
+    <p class="hero-lede">{{ site.description }}</p>
+    <div class="hero-cta">
+      <a href="#publications" class="btn btn-primary">View Publications <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="mailto:{{ site.owner.email }}" class="btn btn-ghost"><i class="fa-regular fa-envelope"></i> Contact</a>
+    </div>
+    <div class="hero-meta">
+      <a href="{{ site.owner.website }}" target="_blank" rel="noopener"><i class="fa-solid fa-flask"></i> VGI Lab</a>
+      <span class="sep"></span>
+      <a href="https://github.com/{{ site.owner.github }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+      <span class="sep"></span>
+      <a href="https://linkedin.com/in/{{ site.owner.linkedin }}" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </div>
+  <a href="#about" class="hero-scroll" aria-label="Scroll down"><span></span></a>
+</header>

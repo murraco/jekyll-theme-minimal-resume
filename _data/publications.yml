@@ -1,8 +1,13 @@
+- title: "Diffusion-Based AI System for Second Language Reading: Development, Text Quality Validation, and Learner Perception"
+  conference: "Computers & Education, vol. 251, 105653, Oct. 2026 (JCR: 0.6%, IF: 10.8)"
+  authors: "H. Lim*, Euijune Lee*, Si Eun Kwoun, Sung-Ho Bae, G.-M. Park, Yohan Hwang, and Sangmin-Michelle Lee†"
+  url: "#"
+
 - title: "ConceptSplit: Decoupled Multi-Concept Personalization of Diffusion Models via Token-wise Adaptation and Attention Disentanglement"
-  conference: International Conference on Computer Vision (ICCV), 2025 # (연도 확인 필수!)
-  authors: "Habin Lim, Author 2, Author 3" # (저자명 추가)
-  url: "#" # (논문 링크 또는 Arxiv 링크 추가)
-  
+  conference: International Conference on Computer Vision (ICCV), 2025
+  authors: "Habin Lim, Author 2, Author 3"
+  url: "#"
+
 - title: "Good-Text Inversion for Faster Real Image Editing using Guided Diffusion Models"
   conference: Korea Software Congress (KSC), 2024
   authors: "Habin Lim, Author 2"
