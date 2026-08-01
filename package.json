@@ -18,7 +18,7 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
-    "sass": "^1.86.0"
+    "sass": "^1.102.0"
   },
   "devDependencies": {
     "browser-sync": "^3.0.4"
