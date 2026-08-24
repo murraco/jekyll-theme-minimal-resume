@@ -18,6 +18,6 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^6.0.1",
     "gulp-uglify": "^3.0.2",
-    "sass": "^1.102.0"
+    "sass": "^1.103.1"
   }
 }
